@@ -1,0 +1,1580 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth h-full antialiased">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Catalog | SS Automotive Sealing Systems</title>
+  <meta name="description" content="Explore our technical catalog of EPDM and Thermoplastic vulcanized sealing systems. Providing superior acoustic comfort and aero efficiency.">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Tailwind CSS Play CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              dark: '#070B16',
+              card: '#0F1626',
+              cyan: '#00E5FF',
+              blue: '#2563EB',
+              accent: '#3B82F6',
+              'gray-dark': '#1E293B',
+              'gray-light': '#F8FAFC',
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+            display: ['Outfit', 'system-ui', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    /* 3D perspective setup */
+    .perspective-container {
+      perspective: 1000px;
+    }
+    .parallax-target {
+      transform-style: preserve-3d;
+      transition: transform 0.1s ease-out;
+    }
+  </style>
+</head>
+<body class="flex min-h-full flex-col bg-brand-dark text-slate-100 font-sans">
+
+  <!-- HEADER / NAVBAR -->
+  <header id="main-header" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 py-6 border-b border-transparent bg-transparent">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between">
+        <!-- Logo -->
+        <a href="index.html" class="flex items-center space-x-2 group">
+          <div class="flex h-10 w-10 items-center justify-center rounded-lg bg-brand-accent/10 border border-brand-cyan/30 text-brand-cyan transition-colors duration-300 group-hover:bg-brand-accent group-hover:text-white">
+            <i data-lucide="cpu" class="h-5 w-5 animate-pulse-slow"></i>
+          </div>
+          <div class="flex flex-col">
+            <span class="font-display text-lg font-black tracking-widest text-white group-hover:text-brand-cyan transition-colors duration-300">
+              SS AUTOMOTIVE
+            </span>
+            <span class="text-[10px] uppercase tracking-wider text-slate-400">
+              Engineering Sealing Systems
+            </span>
+          </div>
+        </a>
+
+        <!-- Desktop Nav -->
+        <nav class="hidden md:flex items-center space-x-8">
+          <a href="index.html" class="relative text-sm font-medium tracking-wide text-slate-300 hover:text-white transition-colors duration-300 py-1">
+            Home
+          </a>
+          <a href="about.html" class="relative text-sm font-medium tracking-wide text-slate-300 hover:text-white transition-colors duration-300 py-1">
+            About
+          </a>
+          <a href="services.html" class="relative text-sm font-medium tracking-wide text-slate-300 hover:text-white transition-colors duration-300 py-1">
+            Services
+          </a>
+          <a href="products.html" class="relative text-sm font-medium tracking-wide text-brand-cyan transition-colors duration-300 py-1">
+            Products
+            <span class="absolute bottom-0 left-0 right-0 h-[2px] bg-brand-cyan"></span>
+          </a>
+          <a href="contact.html" class="relative text-sm font-medium tracking-wide text-slate-300 hover:text-white transition-colors duration-300 py-1">
+            Contact
+          </a>
+        </nav>
+
+        <!-- Action Button -->
+        <div class="hidden md:block">
+          <a href="contact.html?quote=true" class="inline-flex items-center justify-center px-5 py-2.5 rounded-lg text-sm font-semibold tracking-wide text-white bg-gradient-to-r from-brand-blue to-brand-accent hover:shadow-[0_0_20px_rgba(37,99,235,0.4)] transition-all duration-300 cursor-pointer">
+            Get a Quote
+          </a>
+        </div>
+
+        <!-- Hamburger button -->
+        <button id="menu-toggle" class="md:hidden flex h-10 w-10 items-center justify-center rounded-lg border border-slate-700 text-slate-300 hover:text-white hover:border-slate-500 transition-colors" aria-label="Toggle navigation menu">
+          <i data-lucide="menu" id="menu-icon" class="h-5 w-5"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile drawer menu -->
+    <div id="mobile-menu" class="hidden md:hidden absolute top-full left-0 right-0 glass-panel border-t border-white/5 shadow-2xl py-6 px-4 space-y-4">
+      <div class="flex flex-col space-y-3">
+        <a href="index.html" class="block py-3 px-4 rounded-lg font-medium text-base text-slate-300 hover:bg-white/5 hover:text-white">Home</a>
+        <a href="about.html" class="block py-3 px-4 rounded-lg font-medium text-base text-slate-300 hover:bg-white/5 hover:text-white">About</a>
+        <a href="services.html" class="block py-3 px-4 rounded-lg font-medium text-base text-slate-300 hover:bg-white/5 hover:text-white">Services</a>
+        <a href="products.html" class="block py-3 px-4 rounded-lg font-medium text-base bg-brand-accent/10 text-brand-cyan border-l-2 border-brand-cyan">Products</a>
+        <a href="contact.html" class="block py-3 px-4 rounded-lg font-medium text-base text-slate-300 hover:bg-white/5 hover:text-white">Contact</a>
+      </div>
+      <div class="pt-4 border-t border-white/5">
+        <a href="contact.html?quote=true" class="block w-full text-center py-3 rounded-lg text-sm font-semibold text-white bg-gradient-to-r from-brand-blue to-brand-accent">
+          Get a Quote
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="flex-grow pt-20">
+    <div class="bg-brand-dark min-h-screen relative overflow-hidden">
+      <!-- Dynamic Background visual glow -->
+      <div class="absolute top-[-10%] left-[-15%] h-[600px] w-[600px] rounded-full bg-brand-blue/10 blur-[130px] animate-pulse-slow pointer-events-none"></div>
+      <div class="absolute bottom-[20%] right-[-10%] h-[700px] w-[700px] rounded-full bg-brand-cyan/5 blur-[150px] pointer-events-none"></div>
+
+      <!-- 1. CINEMATIC HERO BANNER -->
+      <section class="relative py-24 md:py-36 text-center space-y-6 tech-grid border-b border-white/5">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10 space-y-6">
+          <div class="inline-flex items-center space-x-2 rounded-full border border-brand-cyan/30 bg-brand-cyan/5 px-4 py-1.5 text-xs font-bold text-brand-cyan uppercase tracking-widest">
+            <i data-lucide="sparkles" class="h-3.5 w-3.5 mr-1.5 animate-pulse text-brand-cyan"></i>
+            <span>OEM Sealing Catalog</span>
+          </div>
+
+          <h1 class="font-display text-4xl sm:text-5xl lg:text-7xl font-black text-white tracking-tight leading-tight">
+            Next-Generation <br class="hidden sm:inline" />
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-cyan to-brand-blue">
+              Vehicle Sealing Systems
+            </span>
+          </h1>
+
+          <p class="text-base sm:text-lg text-slate-400 max-w-3xl mx-auto leading-relaxed pt-2">
+            A comprehensive, engineering-focused catalog of EPDM and Thermoplastic vulcanized sealing systems. 
+            Providing superior acoustic comfort, micro-tolerance insulation, and drag reduction for modern automotive platforms.
+          </p>
+        </div>
+      </section>
+
+      <!-- 2. FEATURED FLAGSHIP SPLIT SECTIONS (THE 4 MAJOR RENDERS) -->
+      <section class="py-24 bg-[#090D18] border-b border-white/5">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 space-y-32">
+          
+          <div class="text-center max-w-3xl mx-auto space-y-4">
+            <h2 class="font-display text-xs font-bold uppercase tracking-widest text-brand-cyan">
+              Flagship Innovation
+            </h2>
+            <h3 class="font-display text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+              Featured Sealing Technology
+            </h3>
+            <p class="text-slate-400 text-sm">
+              Explore our highly technical body sealing profiles validated in dark studio CAD stress simulations.
+            </p>
+          </div>
+
+          <div class="space-y-28">
+            <!-- Featured 1: Flush Glazing -->
+            <div id="featured-flush-glazing" class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+              <div class="lg:col-span-5">
+                <div class="relative aspect-square w-full rounded-2xl overflow-hidden border border-white/5 glass-panel group shadow-2xl min-h-[350px]">
+                  <img src="assets/flush-glazing.png" alt="Flush Glazing Concept" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                  <div class="absolute inset-0 bg-gradient-to-t from-brand-dark/40 to-transparent"></div>
+                </div>
+              </div>
+              <div class="lg:col-span-7 space-y-6">
+                <div class="space-y-2">
+                  <span class="text-[10px] uppercase font-bold tracking-widest text-brand-cyan bg-brand-cyan/10 border border-brand-cyan/20 px-3 py-1 rounded-full">
+                    Flagship Technology
+                  </span>
+                  <h4 class="font-display text-2xl sm:text-3xl font-extrabold text-white tracking-tight pt-1">
+                    Flush Glazing Concept
+                  </h4>
+                  <p class="text-brand-cyan text-sm font-semibold italic">Aesthetic + Aerodynamic + Thermal Efficiency</p>
+                  <p class="text-slate-400 text-sm leading-relaxed pt-2">
+                    Engineered to satisfy the stringent optical and aerodynamic parameters of next-generation luxury vehicles. The Flush Glazing System creates a seamless transition between the automotive glass and the metallic vehicle body. Perfect for frameless glass systems, EVs, and sleek hybrid vehicles.
+                  </p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 pt-2">
+                  <div class="space-y-3">
+                    <h5 class="font-display text-xs font-bold uppercase tracking-wider text-slate-300 border-b border-white/10 pb-1.5">
+                      Engineering Highlights
+                    </h5>
+                    <ul class="space-y-2.5">
+                      <li class="flex items-start text-xs text-slate-300 leading-relaxed">
+                        <i data-lucide="check-circle-2" class="h-4 w-4 text-brand-cyan shrink-0 mr-2 mt-0.5"></i>
+                        <span>Aerodynamic integration minimizing wind friction and drag</span>
+                      </li>
+                      <li class="flex items-start text-xs text-slate-300 leading-relaxed">
+                        <i data-lucide="check-circle-2" class="h-4 w-4 text-brand-cyan shrink-0 mr-2 mt-0.5"></i>
+                        <span>Hidden frame system for modern aesthetic appearance</span>
+                      </li>
+                      <li class="flex items-start text-xs text-slate-300 leading-relaxed">
+                        <i data-lucide="check-circle-2" class="h-4 w-4 text-brand-cyan shrink-0 mr-2 mt-0.5"></i>
+                        <span>Excellent acoustic dampening using specialized micro-cellular rubber segments</span>
+                      </li>
+                      <li class="flex items-start text-xs text-slate-300 leading-relaxed">
+                        <i data-lucide="check-circle-2" class="h-4 w-4 text-brand-cyan shrink-0 mr-2 mt-0.5"></i>
+                        <span>Thermally efficient EPDM structure preventing interior climate escape</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="space-y-3">
+                    <h5 class="font-display text-xs font-bold uppercase tracking-wider text-slate-300 border-b border-white/10 pb-1.5">
+                      Technical Metrics
+                    </h5>
+                    <div class="overflow-hidden rounded-lg border border-white/5 bg-brand-dark/50">
+                      <table class="min-w-full text-[11px] text-left">
+                        <tbody class="divide-y divide-white/5 text-slate-400">
+                          <tr>
+                            <td class="px-4 py-2 font-bold text-slate-300">Material Composition</td>
+                            <td class="px-4 py-2">EPDM Dense + Sponge Co-extrusion</td>
+                          </tr>
+                          <tr>
+                            <td class="px-4 py-2 font-bold text-slate-300">Hardness (Shore A)</td>
+                            <td class="px-4 py-2">65-75 Dense / 0.55-0.70 density</td>
+                          </tr>
+                          <tr>
+                            <td class="px-4 py-2 font-bold text-slate-300">Wind Noise Reduction</td>
+                            <td class="px-4 py-2">-4.5 dB at 120 km/h</td>
+                          </tr>
+                          <tr>
+                            <td class="px-4 py-2 font-bold text-slate-300">Style Options</td>
+                            <td class="px-4 py-2">Matte Black, soft-lip profile</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+                <div class="pt-4 flex gap-4">
+                  <a href="contact.html?product=flush-glazing" class="inline-flex items-center justify-center px-5 py-3 rounded-lg text-xs font-bold tracking-wide text-white bg-gradient-to-r from-brand-blue to-brand-accent hover:shadow-[0_0_20px_rgba(37,99,235,0.4)] transition-all duration-300">
+                    Request RFQ Quote
+                  </a>
+                  <a href="#catalog-grid" class="inline-flex items-center justify-center px-5 py-3 rounded-lg text-xs font-bold tracking-wide text-slate-300 border border-slate-700 hover:text-white hover:border-slate-500 hover:bg-white/5 transition-all duration-300">
+                    View in Catalog
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Featured 2: TPV Door Seal -->
+            <div id="featured-tpv-door-seal" class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+              <div class="lg:col-span-7 space-y-6 order-2 lg:order-1">
+                <div class="space-y-2">
+                  <span class="text-[10px] uppercase font-bold tracking-widest text-brand-cyan bg-brand-cyan/10 border border-brand-cyan/20 px-3 py-1 rounded-full">
+                    Flagship Technology
+                  </span>
+                  <h4 class="font-display text-2xl sm:text-3xl font-extrabold text-white tracking-tight pt-1">
+                    TPV Door Seal on Body
+                  </h4>
+                  <p class="text-brand-cyan text-sm font-semibold italic">Hot-Welded Corner + Lightweight Recyclability</p>
+                  <p class="text-slate-400 text-sm leading-relaxed pt-2">
+                    A highly engineered Thermoplastic Vulcanizate (TPV) sealing solution designed for structural vehicle body openings. Features a dual-bulb profile that absorbs large door-closing tolerances while requiring exceptionally low closing forces. Clean, hot-welded corner junctions ensure a seamless, aesthetic seal contour.
+                  </p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 pt-2">
+                  <div class="space-y-3">
+                    <h5 class="font-display text-xs font-bold uppercase tracking-wider text-slate-300 border-b border-white/10 pb-1.5">
+                      Engineering Highlights
+                    </h5>
+                    <ul class="space-y-2.5">
+                      <li class="flex items-start text-xs text-slate-300 leading-relaxed">
+                        <i data-lucide="check-circle-2" class="h-4 w-4 text-brand-cyan shrink-0 mr-2 mt-0.5"></i>
+                        <span>Hot-welded corners eliminating secondary corner molding defects</span>
+                      </li>
+                      <li class="flex items-start text-xs text-slate-300 leading-relaxed">
+                        <i data-lucide="check-circle-2" class="h-4 w-4 text-brand-cyan shrink-0 mr-2 mt-0.5"></i>
+                        <span>Dual-bulb elastomeric profile optimized for high door tolerance gaps</span>
+                      </li>
+                      <li class="flex items-start text-xs text-slate-300 leading-relaxed">
+                        <i data-lucide="check-circle-2" class="h-4 w-4 text-brand-cyan shrink-0 mr-2 mt-0.5"></i>
+                        <span>100% recyclable thermoplastic vulcanizate elastomer base compound</span>
+                      </li>
+                      <li class="flex items-start text-xs text-slate-300 leading-relaxed">
+                        <i data-lucide="check-circle-2" class="h-4 w-4 text-brand-cyan shrink-0 mr-2 mt-0.5"></i>
+                        <span>Low door-closing force requirements enhancing user cabin premium feel</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="space-y-3">
+                    <h5 class="font-display text-xs font-bold uppercase tracking-wider text-slate-300 border-b border-white/10 pb-1.5">
+                      Technical Metrics
+                    </h5>
+                    <div class="overflow-hidden rounded-lg border border-white/5 bg-brand-dark/50">
+                      <table class="min-w-full text-[11px] text-left">
+                        <tbody class="divide-y divide-white/5 text-slate-400">
+                          <tr>
+                            <td class="px-4 py-2 font-bold text-slate-300">Material Base</td>
+                            <td class="px-4 py-2">Thermoplastic Vulcanizate (TPV PP-EPDM)</td>
+                          </tr>
+                          <tr>
+                            <td class="px-4 py-2 font-bold text-slate-300">Corner Junction</td>
+                            <td class="px-4 py-2">Thermal hot-welded seam</td>
+                          </tr>
+                          <tr>
+                            <td class="px-4 py-2 font-bold text-slate-300">Closing Force Impact</td>
+                            <td class="px-4 py-2">Reduces pressure by up to 25%</td>
+                          </tr>
+                          <tr>
+                            <td class="px-4 py-2 font-bold text-slate-300">Recyclability Index</td>
+                            <td class="px-4 py-2">100% circular lifecycle</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+                <div class="pt-4 flex gap-4">
+                  <a href="contact.html?product=tpv-door-seal" class="inline-flex items-center justify-center px-5 py-3 rounded-lg text-xs font-bold tracking-wide text-white bg-gradient-to-r from-brand-blue to-brand-accent hover:shadow-[0_0_20px_rgba(37,99,235,0.4)] transition-all duration-300">
+                    Request RFQ Quote
+                  </a>
+                  <a href="#catalog-grid" class="inline-flex items-center justify-center px-5 py-3 rounded-lg text-xs font-bold tracking-wide text-slate-300 border border-slate-700 hover:text-white hover:border-slate-500 hover:bg-white/5 transition-all duration-300">
+                    View in Catalog
+                  </a>
+                </div>
+              </div>
+              <div class="lg:col-span-5 order-1 lg:order-2">
+                <div class="relative aspect-square w-full rounded-2xl overflow-hidden border border-white/5 glass-panel group shadow-2xl min-h-[350px]">
+                  <img src="assets/tpv-door-seal.png" alt="TPV Door Seal" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                  <div class="absolute inset-0 bg-gradient-to-t from-brand-dark/40 to-transparent"></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Featured 3: 2K Outer Belt Seal -->
+            <div id="featured-belt-seal" class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+              <div class="lg:col-span-5">
+                <div class="relative aspect-square w-full rounded-2xl overflow-hidden border border-white/5 glass-panel group shadow-2xl min-h-[350px]">
+                  <img src="assets/belt-seal.png" alt="2K Outer Belt Seal" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                  <div class="absolute inset-0 bg-gradient-to-t from-brand-dark/40 to-transparent"></div>
+                </div>
+              </div>
+              <div class="lg:col-span-7 space-y-6">
+                <div class="space-y-2">
+                  <span class="text-[10px] uppercase font-bold tracking-widest text-brand-cyan bg-brand-cyan/10 border border-brand-cyan/20 px-3 py-1 rounded-full">
+                    Flagship Technology
+                  </span>
+                  <h4 class="font-display text-2xl sm:text-3xl font-extrabold text-white tracking-tight pt-1">
+                    2K Outer Belt Seal
+                  </h4>
+                  <p class="text-brand-cyan text-sm font-semibold italic">Interior Protection + Premium Surface Trim</p>
+                  <p class="text-slate-400 text-sm leading-relaxed pt-2">
+                    Formulated using co-extrusion technology of dense EPDM polymer with integrated steel/aluminum carrier grids. Sits tightly along the vehicle door outer beltline, preventing dust, water, and ambient humidity from entering the inner door cavity while upgrading the vehicle's side profile.
+                  </p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 pt-2">
+                  <div class="space-y-3">
+                    <h5 class="font-display text-xs font-bold uppercase tracking-wider text-slate-300 border-b border-white/10 pb-1.5">
+                      Engineering Highlights
+                    </h5>
+                    <ul class="space-y-2.5">
+                      <li class="flex items-start text-xs text-slate-300 leading-relaxed">
+                        <i data-lucide="check-circle-2" class="h-4 w-4 text-brand-cyan shrink-0 mr-2 mt-0.5"></i>
+                        <span>Integrated metallic carrier grid for robust mechanical grip</span>
+                      </li>
+                      <li class="flex items-start text-xs text-slate-300 leading-relaxed">
+                        <i data-lucide="check-circle-2" class="h-4 w-4 text-brand-cyan shrink-0 mr-2 mt-0.5"></i>
+                        <span>Double dynamic sealing lips reducing glass sliding friction</span>
+                      </li>
+                      <li class="flex items-start text-xs text-slate-300 leading-relaxed">
+                        <i data-lucide="check-circle-2" class="h-4 w-4 text-brand-cyan shrink-0 mr-2 mt-0.5"></i>
+                        <span>Co-extruded cosmetic trim: polished chrome or high-gloss black</span>
+                      </li>
+                      <li class="flex items-start text-xs text-slate-300 leading-relaxed">
+                        <i data-lucide="check-circle-2" class="h-4 w-4 text-brand-cyan shrink-0 mr-2 mt-0.5"></i>
+                        <span>Anti-stretch core layer keeping tolerances locked under thermal expansion</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="space-y-3">
+                    <h5 class="font-display text-xs font-bold uppercase tracking-wider text-slate-300 border-b border-white/10 pb-1.5">
+                      Technical Metrics
+                    </h5>
+                    <div class="overflow-hidden rounded-lg border border-white/5 bg-brand-dark/50">
+                      <table class="min-w-full text-[11px] text-left">
+                        <tbody class="divide-y divide-white/5 text-slate-400">
+                          <tr>
+                            <td class="px-4 py-2 font-bold text-slate-300">Carrier Grid</td>
+                            <td class="px-4 py-2">Stamping Steel (0.5mm) or Aluminum</td>
+                          </tr>
+                          <tr>
+                            <td class="px-4 py-2 font-bold text-slate-300">Trim Finishes</td>
+                            <td class="px-4 py-2">Electro-Chrome / Piano Black option</td>
+                          </tr>
+                          <tr>
+                            <td class="px-4 py-2 font-bold text-slate-300">Water Ingress Rating</td>
+                            <td class="px-4 py-2">Zero leakage under pressure tests</td>
+                          </tr>
+                          <tr>
+                            <td class="px-4 py-2 font-bold text-slate-300">Friction Coefficient</td>
+                            <td class="px-4 py-2">&lt; 0.35 against glass (Flocked/PU)</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+                <div class="pt-4 flex gap-4">
+                  <a href="contact.html?product=belt-seal" class="inline-flex items-center justify-center px-5 py-3 rounded-lg text-xs font-bold tracking-wide text-white bg-gradient-to-r from-brand-blue to-brand-accent hover:shadow-[0_0_20px_rgba(37,99,235,0.4)] transition-all duration-300">
+                    Request RFQ Quote
+                  </a>
+                  <a href="#catalog-grid" class="inline-flex items-center justify-center px-5 py-3 rounded-lg text-xs font-bold tracking-wide text-slate-300 border border-slate-700 hover:text-white hover:border-slate-500 hover:bg-white/5 transition-all duration-300">
+                    View in Catalog
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Featured 4: Glass Run Channel -->
+            <div id="featured-glass-run" class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+              <div class="lg:col-span-7 space-y-6 order-2 lg:order-1">
+                <div class="space-y-2">
+                  <span class="text-[10px] uppercase font-bold tracking-widest text-brand-cyan bg-brand-cyan/10 border border-brand-cyan/20 px-3 py-1 rounded-full">
+                    Flagship Technology
+                  </span>
+                  <h4 class="font-display text-2xl sm:text-3xl font-extrabold text-white tracking-tight pt-1">
+                    EPDM Glass Run Channel
+                  </h4>
+                  <p class="text-brand-cyan text-sm font-semibold italic">Acoustic Insulation + Climate Control + Friction Lowering</p>
+                  <p class="text-slate-400 text-sm leading-relaxed pt-2">
+                    A highly engineered double-extruded channel that encapsulates and guides the moving window glass. Features premium flocked or polyurethane-coated lips that allow smooth glass sliding while blocking dynamic road noises and weather impacts.
+                  </p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 pt-2">
+                  <div class="space-y-3">
+                    <h5 class="font-display text-xs font-bold uppercase tracking-wider text-slate-300 border-b border-white/10 pb-1.5">
+                      Engineering Highlights
+                    </h5>
+                    <ul class="space-y-2.5">
+                      <li class="flex items-start text-xs text-slate-300 leading-relaxed">
+                        <i data-lucide="check-circle-2" class="h-4 w-4 text-brand-cyan shrink-0 mr-2 mt-0.5"></i>
+                        <span>Optimized U-shape and flexible side flanges for tight glass sealing</span>
+                      </li>
+                      <li class="flex items-start text-xs text-slate-300 leading-relaxed">
+                        <i data-lucide="check-circle-2" class="h-4 w-4 text-brand-cyan shrink-0 mr-2 mt-0.5"></i>
+                        <span>Internal acoustic cavity foam backing providing superior soundproofing</span>
+                      </li>
+                      <li class="flex items-start text-xs text-slate-300 leading-relaxed">
+                        <i data-lucide="check-circle-2" class="h-4 w-4 text-brand-cyan shrink-0 mr-2 mt-0.5"></i>
+                        <span>Advanced electrostatic flocking coating for durability and glide</span>
+                      </li>
+                      <li class="flex items-start text-xs text-slate-300 leading-relaxed">
+                        <i data-lucide="check-circle-2" class="h-4 w-4 text-brand-cyan shrink-0 mr-2 mt-0.5"></i>
+                        <span>Highly flexible molded corners accommodating complex frame profiles</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="space-y-3">
+                    <h5 class="font-display text-xs font-bold uppercase tracking-wider text-slate-300 border-b border-white/10 pb-1.5">
+                      Technical Metrics
+                    </h5>
+                    <div class="overflow-hidden rounded-lg border border-white/5 bg-brand-dark/50">
+                      <table class="min-w-full text-[11px] text-left">
+                        <tbody class="divide-y divide-white/5 text-slate-400">
+                          <tr>
+                            <td class="px-4 py-2 font-bold text-slate-300">Main Geometry</td>
+                            <td class="px-4 py-2">U-shaped with double dynamic flanges</td>
+                          </tr>
+                          <tr>
+                            <td class="px-4 py-2 font-bold text-slate-300">Coating Type</td>
+                            <td class="px-4 py-2">Nylon Flocked / Low-friction PU lacquer</td>
+                          </tr>
+                          <tr>
+                            <td class="px-4 py-2 font-bold text-slate-300">Closing Force Impact</td>
+                            <td class="px-4 py-2">Reduces motor load by up to 20%</td>
+                          </tr>
+                          <tr>
+                            <td class="px-4 py-2 font-bold text-slate-300">Temp Threshold</td>
+                            <td class="px-4 py-2">-40°C to +125°C performance</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+                <div class="pt-4 flex gap-4">
+                  <a href="contact.html?product=glass-run" class="inline-flex items-center justify-center px-5 py-3 rounded-lg text-xs font-bold tracking-wide text-white bg-gradient-to-r from-brand-blue to-brand-accent hover:shadow-[0_0_20px_rgba(37,99,235,0.4)] transition-all duration-300">
+                    Request RFQ Quote
+                  </a>
+                  <a href="#catalog-grid" class="inline-flex items-center justify-center px-5 py-3 rounded-lg text-xs font-bold tracking-wide text-slate-300 border border-slate-700 hover:text-white hover:border-slate-500 hover:bg-white/5 transition-all duration-300">
+                    View in Catalog
+                  </a>
+                </div>
+              </div>
+              <div class="lg:col-span-5 order-1 lg:order-2">
+                <div class="relative aspect-square w-full rounded-2xl overflow-hidden border border-white/5 glass-panel group shadow-2xl min-h-[350px]">
+                  <img src="assets/cad-engineering.png" alt="EPDM Glass Run Channel" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                  <div class="absolute inset-0 bg-gradient-to-t from-brand-dark/40 to-transparent"></div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- 3. STICKY CATEGORY NAVIGATION & SEARCH BAR -->
+      <nav id="sticky-bar" class="sticky top-20 z-40 bg-brand-dark/90 backdrop-blur-md border-b border-white/5 py-4 shadow-xl">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+            <!-- Category tabs -->
+            <div class="flex flex-wrap gap-2 md:gap-3" id="categories-container">
+              <button onclick="filterCategory('all')" id="cat-all" class="relative px-4 py-2.5 rounded-lg text-xs font-bold tracking-wide transition-colors cursor-pointer text-white bg-brand-blue border border-brand-cyan/20">
+                All Sealing Systems
+              </button>
+              <button onclick="filterCategory('aperture')" id="cat-aperture" class="relative px-4 py-2.5 rounded-lg text-xs font-bold tracking-wide transition-colors cursor-pointer text-slate-400 hover:text-white">
+                Apertures & Dynamic
+              </button>
+              <button onclick="filterCategory('beltline')" id="cat-beltline" class="relative px-4 py-2.5 rounded-lg text-xs font-bold tracking-wide transition-colors cursor-pointer text-slate-400 hover:text-white">
+                Beltlines & Trims
+              </button>
+              <button onclick="filterCategory('specialty')" id="cat-specialty" class="relative px-4 py-2.5 rounded-lg text-xs font-bold tracking-wide transition-colors cursor-pointer text-slate-400 hover:text-white">
+                Specialty & Insulation
+              </button>
+            </div>
+
+            <!-- Live Search -->
+            <div class="relative w-full md:w-72">
+              <input
+                type="text"
+                id="search-input"
+                placeholder="Search dynamic sealing system..."
+                oninput="handleSearch()"
+                class="w-full pl-9 pr-4 py-2.5 rounded-lg bg-brand-card border border-white/5 text-xs text-white placeholder-slate-500 focus:outline-hidden focus:border-brand-cyan focus:ring-1 focus:ring-brand-cyan transition-colors"
+              />
+              <i data-lucide="search" class="absolute left-3 top-3 h-3.5 w-3.5 text-slate-500"></i>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <!-- 4. THE 25-PRODUCT RESPONSIVE GRID CATALOG -->
+      <section id="catalog-grid" class="py-20 bg-brand-dark scroll-mt-36">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 space-y-12">
+          
+          <div class="flex justify-between items-end border-b border-white/5 pb-6">
+            <div>
+              <h3 class="font-display text-xl font-extrabold text-white">Full Sealing Catalog</h3>
+              <p class="text-slate-400 text-xs mt-1" id="catalog-count-label">Showing 25 certified vehicle sealing systems.</p>
+            </div>
+            <i data-lucide="sliders" class="h-5 w-5 text-brand-cyan hidden sm:block"></i>
+          </div>
+
+          <!-- Grid Wrapper -->
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="products-grid">
+            <!-- Dynamic products will be injected here via JavaScript -->
+          </div>
+
+          <!-- Empty Search State -->
+          <div id="empty-state" class="hidden text-center py-20 bg-brand-card border border-white/5 rounded-2xl space-y-4">
+            <i data-lucide="shield-alert" class="h-10 w-10 text-brand-cyan mx-auto animate-bounce"></i>
+            <div class="space-y-1">
+              <h4 class="font-display text-lg font-bold text-white">No Sealing Profile Found</h4>
+              <p class="text-slate-400 text-xs max-w-sm mx-auto">We couldn't find a vehicle sealing compound matching your criteria. Try searching EPDM, TPV, or inner belts.</p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- 5. TECHNICAL INNOVATION SECTION -->
+      <section class="py-24 bg-[#090D18] border-t border-b border-white/5">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 space-y-16">
+          <div class="text-center max-w-3xl mx-auto space-y-4">
+            <h2 class="font-display text-xs font-bold uppercase tracking-widest text-brand-cyan">
+              R&D Excellence
+            </h2>
+            <h3 class="font-display text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+              Advanced Sealing & Material Innovations
+            </h3>
+            <p class="text-slate-400 text-sm">
+              SS Automotive leverages advanced elastomer chemical engineering and design parameters to support Tier 1 global suppliers.
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
+            <div class="p-6 rounded-xl bg-brand-card border border-white/5 hover:border-brand-cyan/20 transition-all duration-300 flex flex-col justify-between">
+              <div class="space-y-4">
+                <div class="h-10 w-10 rounded-lg bg-brand-cyan/5 border border-brand-cyan/10 flex items-center justify-center text-brand-cyan">
+                  <i data-lucide="waves" class="h-5 w-5"></i>
+                </div>
+                <h4 class="font-display text-sm font-bold text-white leading-snug">EPDM Compounding</h4>
+                <p class="text-slate-400 text-[11px] leading-relaxed">Proprietary vulcanized EPDM formulations optimized for high weatherability, UV ozone stability, and a reliable dynamic compression set.</p>
+              </div>
+            </div>
+
+            <div class="p-6 rounded-xl bg-brand-card border border-white/5 hover:border-brand-cyan/20 transition-all duration-300 flex flex-col justify-between">
+              <div class="space-y-4">
+                <div class="h-10 w-10 rounded-lg bg-brand-cyan/5 border border-brand-cyan/10 flex items-center justify-center text-brand-cyan">
+                  <i data-lucide="cpu" class="h-5 w-5"></i>
+                </div>
+                <h4 class="font-display text-sm font-bold text-white leading-snug">TPV Hot-Welded Joints</h4>
+                <p class="text-slate-400 text-[11px] leading-relaxed">Next-gen Thermoplastic Vulcanizate (TPV) profiles featuring thermal hot-welded corner junctions that eliminate secondary injection flashings.</p>
+              </div>
+            </div>
+
+            <div class="p-6 rounded-xl bg-brand-card border border-white/5 hover:border-brand-cyan/20 transition-all duration-300 flex flex-col justify-between">
+              <div class="space-y-4">
+                <div class="h-10 w-10 rounded-lg bg-brand-cyan/5 border border-brand-cyan/10 flex items-center justify-center text-brand-cyan">
+                  <i data-lucide="zap" class="h-5 w-5"></i>
+                </div>
+                <h4 class="font-display text-sm font-bold text-white leading-snug">NVH Acoustic Optimization</h4>
+                <p class="text-slate-400 text-[11px] leading-relaxed">Microcellular sponge structures combined with flocked dynamic sealing lips to lower wind rush decibels and structural cabin vibration.</p>
+              </div>
+            </div>
+
+            <div class="p-6 rounded-xl bg-brand-card border border-white/5 hover:border-brand-cyan/20 transition-all duration-300 flex flex-col justify-between">
+              <div class="space-y-4">
+                <div class="h-10 w-10 rounded-lg bg-brand-cyan/5 border border-brand-cyan/10 flex items-center justify-center text-brand-cyan">
+                  <i data-lucide="feather" class="h-5 w-5"></i>
+                </div>
+                <h4 class="font-display text-sm font-bold text-white leading-snug">Lightweight Sealing Profiles</h4>
+                <p class="text-slate-400 text-[11px] leading-relaxed">Thin-walled hollow bulb profiles and low-density sponge configurations that reduce component weight by 20% to boost electric vehicle mileage.</p>
+              </div>
+            </div>
+
+            <div class="p-6 rounded-xl bg-brand-card border border-white/5 hover:border-brand-cyan/20 transition-all duration-300 flex flex-col justify-between">
+              <div class="space-y-4">
+                <div class="h-10 w-10 rounded-lg bg-brand-cyan/5 border border-brand-cyan/10 flex items-center justify-center text-brand-cyan">
+                  <i data-lucide="leaf" class="h-5 w-5"></i>
+                </div>
+                <h4 class="font-display text-sm font-bold text-white leading-snug">Sustainable Materials Lifecycle</h4>
+                <p class="text-slate-400 text-[11px] leading-relaxed">Pioneering bio-derived rubber bases and 100% recyclable thermoplastic elastomers, supporting circular manufacturing programs.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 6. AUTOMOTIVE APPLICATIONS SECTION -->
+      <section class="py-24 bg-brand-dark">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 space-y-16">
+          <div class="text-center max-w-3xl mx-auto space-y-4">
+            <h2 class="font-display text-xs font-bold uppercase tracking-widest text-brand-cyan">
+              Platforms We Support
+            </h2>
+            <h3 class="font-display text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+              Engineered Across Diverse Powertrains
+            </h3>
+            <p class="text-slate-400 text-sm">
+              Delivering high-integrity seals tailored to the distinct mechanical constraints of diverse modern vehicle layouts.
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-5 gap-6">
+            <div class="p-6 rounded-xl bg-brand-card border border-white/5 relative overflow-hidden group hover:border-brand-cyan/20 transition-all duration-300">
+              <div class="absolute top-0 left-0 w-full h-[3px] bg-gradient-to-r from-brand-cyan to-brand-blue transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div>
+              <i data-lucide="car" class="h-6 w-6 text-brand-cyan mb-4 group-hover:animate-pulse"></i>
+              <h4 class="font-display text-sm font-bold text-white mb-2">Passenger Cars</h4>
+              <p class="text-slate-400 text-[11px] leading-relaxed">Classic double-bulb primary seals and flocked run channels focusing on quiet, low door-closing forces.</p>
+            </div>
+
+            <div class="p-6 rounded-xl bg-brand-card border border-white/5 relative overflow-hidden group hover:border-brand-cyan/20 transition-all duration-300">
+              <div class="absolute top-0 left-0 w-full h-[3px] bg-gradient-to-r from-brand-cyan to-brand-blue transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div>
+              <i data-lucide="car" class="h-6 w-6 text-brand-cyan mb-4 group-hover:animate-pulse"></i>
+              <h4 class="font-display text-sm font-bold text-white mb-2">Hybrid Platforms</h4>
+              <p class="text-slate-400 text-[11px] leading-relaxed">Insulating microcellular weatherstripping optimized for thermal preservation during EV engine shutdowns.</p>
+            </div>
+
+            <div class="p-6 rounded-xl bg-brand-card border border-white/5 relative overflow-hidden group hover:border-brand-cyan/20 transition-all duration-300">
+              <div class="absolute top-0 left-0 w-full h-[3px] bg-gradient-to-r from-brand-cyan to-brand-blue transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div>
+              <i data-lucide="car" class="h-6 w-6 text-brand-cyan mb-4 group-hover:animate-pulse"></i>
+              <h4 class="font-display text-sm font-bold text-white mb-2">Electric Vehicles (BEV)</h4>
+              <p class="text-slate-400 text-[11px] leading-relaxed">Aerodynamic flush glazing systems and thin-wall profiles that decrease drag and extend battery range.</p>
+            </div>
+
+            <div class="p-6 rounded-xl bg-brand-card border border-white/5 relative overflow-hidden group hover:border-brand-cyan/20 transition-all duration-300">
+              <div class="absolute top-0 left-0 w-full h-[3px] bg-gradient-to-r from-brand-cyan to-brand-blue transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div>
+              <i data-lucide="car" class="h-6 w-6 text-brand-cyan mb-4 group-hover:animate-pulse"></i>
+              <h4 class="font-display text-sm font-bold text-white mb-2">Frameless Vehicles</h4>
+              <p class="text-slate-400 text-[11px] leading-relaxed">Multi-stage compression lip profiles and sensor cavities for frameless dynamic window joints.</p>
+            </div>
+
+            <div class="p-6 rounded-xl bg-brand-card border border-white/5 relative overflow-hidden group hover:border-brand-cyan/20 transition-all duration-300">
+              <div class="absolute top-0 left-0 w-full h-[3px] bg-gradient-to-r from-brand-cyan to-brand-blue transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div>
+              <i data-lucide="car" class="h-6 w-6 text-brand-cyan mb-4 group-hover:animate-pulse"></i>
+              <h4 class="font-display text-sm font-bold text-white mb-2">Premium SUVs</h4>
+              <p class="text-slate-400 text-[11px] leading-relaxed">Impact-resilient TPV outer belt seals and heavy-duty splash mud guards resisting mud and offroad stress.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 7. DYNAMIC RFQ CTA BANNER -->
+      <section class="py-24 relative overflow-hidden bg-brand-card">
+        <div class="absolute inset-0 bg-linear-to-r from-brand-blue/30 to-brand-cyan/10 opacity-30 pointer-events-none"></div>
+        <div class="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 text-center relative z-10 space-y-8">
+          <i data-lucide="compass" class="h-10 w-10 text-brand-cyan mx-auto animate-pulse-slow"></i>
+          <h2 class="font-display text-3xl sm:text-4xl lg:text-5xl font-black text-white leading-tight">
+            Partner with SS Automotive for <br />
+            Next-Generation Sealing Solutions
+          </h2>
+          <p class="text-slate-300 text-base max-w-2xl mx-auto">
+            Bring our 15+ years of elastomeric authority, CAD stress profiling, and physical mold development capabilities in Pune to your next vehicle release program.
+          </p>
+          <div class="flex justify-center gap-4">
+            <a href="contact.html?quote=true" class="inline-flex items-center justify-center px-7 py-4 rounded-lg text-sm font-bold tracking-wide text-white bg-gradient-to-r from-brand-blue to-brand-accent hover:shadow-[0_0_30px_rgba(37,99,235,0.5)] transition-all duration-300 cursor-pointer">
+              Request Engineering Quote
+            </a>
+            <a href="contact.html" class="inline-flex items-center justify-center px-7 py-4 rounded-lg text-sm font-bold tracking-wide text-slate-300 border border-slate-700 hover:text-white hover:border-slate-500 hover:bg-white/5 transition-all duration-300">
+              Consult an Engineer
+            </a>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-[#050810] border-t border-white/5 pt-16 pb-8 text-slate-400">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+        <!-- Column 1: Profile -->
+        <div class="space-y-4">
+          <a href="index.html" class="flex items-center space-x-2 group">
+            <div class="flex h-10 w-10 items-center justify-center rounded-lg bg-brand-accent/10 border border-brand-cyan/20 text-brand-cyan">
+              <i data-lucide="cpu" class="h-5 w-5"></i>
+            </div>
+            <div class="flex flex-col">
+              <span class="font-display text-lg font-black tracking-widest text-white">
+                SS AUTOMOTIVE
+              </span>
+              <span class="text-[10px] uppercase tracking-wider text-brand-cyan">
+                Engineering Sealing Systems
+              </span>
+            </div>
+          </a>
+          <p class="text-sm leading-relaxed text-slate-400 pt-2">
+            SS Automotive is a premier automotive engineering provider with 15+ years of experience in sealing systems innovation, custom tooling, and product validation.
+          </p>
+        </div>
+
+        <!-- Column 2: Quick Links -->
+        <div>
+          <h3 class="font-display text-sm font-bold uppercase tracking-wider text-white mb-5">
+            Quick Links
+          </h3>
+          <ul class="space-y-3 text-sm">
+            <li>
+              <a href="index.html" class="hover:text-brand-cyan transition-colors duration-200 flex items-center group">
+                <i data-lucide="arrow-right" class="h-3 w-3 mr-2 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-200 text-brand-cyan"></i>
+                Home
+              </a>
+            </li>
+            <li>
+              <a href="about.html" class="hover:text-brand-cyan transition-colors duration-200 flex items-center group">
+                <i data-lucide="arrow-right" class="h-3 w-3 mr-2 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-200 text-brand-cyan"></i>
+                About Company
+              </a>
+            </li>
+            <li>
+              <a href="services.html" class="hover:text-brand-cyan transition-colors duration-200 flex items-center group">
+                <i data-lucide="arrow-right" class="h-3 w-3 mr-2 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-200 text-brand-cyan"></i>
+                Engineering Services
+              </a>
+            </li>
+            <li>
+              <a href="products.html" class="hover:text-brand-cyan transition-colors duration-200 flex items-center group">
+                <i data-lucide="arrow-right" class="h-3 w-3 mr-2 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-200 text-brand-cyan"></i>
+                Product Catalog
+              </a>
+            </li>
+            <li>
+              <a href="contact.html" class="hover:text-brand-cyan transition-colors duration-200 flex items-center group">
+                <i data-lucide="arrow-right" class="h-3 w-3 mr-2 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-200 text-brand-cyan"></i>
+                Contact & Location
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Core Expertise -->
+        <div>
+          <h3 class="font-display text-sm font-bold uppercase tracking-wider text-white mb-5">
+            Our Expertise
+          </h3>
+          <ul class="space-y-3 text-sm">
+            <li class="flex items-center text-slate-400">
+              <span class="h-1.5 w-1.5 rounded-full bg-brand-cyan/50 mr-2.5"></span>
+              Vehicle Sealing Systems
+            </li>
+            <li class="flex items-center text-slate-400">
+              <span class="h-1.5 w-1.5 rounded-full bg-brand-cyan/50 mr-2.5"></span>
+              CAD Design & Optimization
+            </li>
+            <li class="flex items-center text-slate-400">
+              <span class="h-1.5 w-1.5 rounded-full bg-brand-cyan/50 mr-2.5"></span>
+              FEA / CAE Simulation
+            </li>
+            <li class="flex items-center text-slate-400">
+              <span class="h-1.5 w-1.5 rounded-full bg-brand-cyan/50 mr-2.5"></span>
+              Injection Molding
+            </li>
+            <li class="flex items-center text-slate-400">
+              <span class="h-1.5 w-1.5 rounded-full bg-brand-cyan/50 mr-2.5"></span>
+              Rapid Prototyping (SLA)
+            </li>
+            <li class="flex items-center text-slate-400">
+              <span class="h-1.5 w-1.5 rounded-full bg-brand-cyan/50 mr-2.5"></span>
+              SPM & Gauge Development
+            </li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Contact & Location -->
+        <div class="space-y-4">
+          <h3 class="font-display text-sm font-bold uppercase tracking-wider text-white mb-5">
+            Get in Touch
+          </h3>
+          <ul class="space-y-4 text-sm">
+            <li class="flex items-start">
+              <i data-lucide="map-pin" class="h-5 w-5 mr-3 text-brand-cyan shrink-0 mt-0.5"></i>
+              <span>
+                Wakad, Pune,
+                <br />
+                Maharashtra - 411057, India
+              </span>
+            </li>
+            <li class="flex items-center">
+              <i data-lucide="phone" class="h-5 w-5 mr-3 text-brand-cyan shrink-0"></i>
+              <a href="tel:+919876543210" class="hover:text-brand-cyan transition-colors">
+                +91 98765 43210
+              </a>
+            </li>
+            <li class="flex items-center">
+              <i data-lucide="mail" class="h-5 w-5 mr-3 text-brand-cyan shrink-0"></i>
+              <a href="mailto:info@ssautomotive.in" class="hover:text-brand-cyan transition-colors">
+                info@ssautomotive.in
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Lower Footer -->
+      <div class="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center text-xs space-y-4 md:space-y-0">
+        <p>© <span id="current-year"></span> SS Automotive. All rights reserved.</p>
+        <div class="flex space-x-6">
+          <a href="#" class="hover:text-brand-cyan transition-colors">Privacy Policy</a>
+          <a href="#" class="hover:text-brand-cyan transition-colors">Terms of Service</a>
+          <a href="#" class="hover:text-brand-cyan transition-colors">Pune Engineering Cell</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  
+  <script>
+    // Initialize icons
+    lucide.createIcons();
+
+    // Set current year in footer
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+
+    // Header scroll behavior
+    const header = document.getElementById('main-header');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 20) {
+        header.classList.remove('bg-transparent', 'py-6', 'border-transparent');
+        header.classList.add('bg-brand-dark/85', 'backdrop-blur-md', 'border-white/5', 'py-4', 'shadow-lg', 'shadow-black/20');
+      } else {
+        header.classList.add('bg-transparent', 'py-6', 'border-transparent');
+        header.classList.remove('bg-brand-dark/85', 'backdrop-blur-md', 'border-white/5', 'py-4', 'shadow-lg', 'shadow-black/20');
+      }
+    });
+
+    // Mobile menu toggle
+    const menuToggle = document.getElementById('menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+    menuToggle.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+      const isHidden = mobileMenu.classList.contains('hidden');
+      menuToggle.innerHTML = isHidden 
+        ? '<i data-lucide="menu" class="h-5 w-5"></i>' 
+        : '<i data-lucide="x" class="h-5 w-5"></i>';
+      lucide.createIcons();
+    });
+
+    // 25 Products Data
+    const CATALOG_PRODUCTS = [
+      {
+        id: "flush-glazing",
+        title: "Flush Glazing Concept",
+        category: "aperture",
+        desc: "Seamless, aerodynamic glass-to-body interface that minimizes drag and wind noise.",
+        properties: ["Aerodynamic drag reduction", "Hidden frame look", "Acoustic insulation"],
+        benefits: ["Sleek profile", "Extends EV range", "Wind noise drop"],
+        app: "EVs, Hybrid Vehicles, Premium Coupes"
+      },
+      {
+        id: "tpv-door-seal",
+        title: "TPV Door Seal on Body",
+        category: "aperture",
+        desc: "Recyclable Thermoplastic Vulcanizate profile with hot-welded seamless corner joints.",
+        properties: ["100% recyclable compound", "Low closing force", "Clean corner weld"],
+        benefits: ["Zero leak path", "Eco-friendly", "Premium door slam sound"],
+        app: "Passenger Sedans, Electric SUVs"
+      },
+      {
+        id: "belt-seal",
+        title: "2K Outer Belt Seal",
+        category: "beltline",
+        desc: "Co-extruded door beltline seal featuring integrated metal carrier and chrome finishes.",
+        properties: ["Metal carrier grid", "Dual dynamic lips", "High-gloss chrome trim"],
+        benefits: ["Water barrier", "Dust block", "Side-profile upgrade"],
+        app: "Luxury Passenger Cars, SUVs"
+      },
+      {
+        id: "glass-run",
+        title: "EPDM Glass Run Channel",
+        category: "beltline",
+        desc: "U-shape flocked dynamic channel guiding window movement while dampening cabin acoustics.",
+        properties: ["U-shape static flanges", "Electrostatic flocking", "Acoustic backing"],
+        benefits: ["Low glide friction", "Squeak prevention", "Wind barrier"],
+        app: "All passenger and utility vehicles"
+      },
+      {
+        id: "2k-door-door-below-belt",
+        title: "2K Door to Door Seal (Below Belt)",
+        category: "aperture",
+        desc: "Acoustic barrier co-extruded seal preventing drafts and sound leakage between adjacent door panels.",
+        properties: ["Dual-durometer rubber", "Specialized dynamic lip", "Slip-coating surface"],
+        benefits: ["Muffles B-pillar wind hiss", "Blocks low-belt dirt", "Smooth door closure"],
+        app: "Frameless Sedans, Premium SUVs"
+      },
+      {
+        id: "2k-door-fender",
+        title: "2K Door to Fender Seal",
+        category: "aperture",
+        desc: "Front door-to-fender transition weatherstrip reducing structural cavity turbulence.",
+        properties: ["Integrated mechanical clips", "High elastic TPE bulbs", "Low friction face"],
+        benefits: ["Aero optimization", "Prevents dirt buildup", "Acoustic seal"],
+        app: "Aerodynamic EVs, Hybrid Sedans"
+      },
+      {
+        id: "2k-upper-frame-finisher",
+        title: "2K Upper Frame Finisher",
+        category: "beltline",
+        desc: "Co-extruded plastic/rubber trim framing the door upper glass aperture.",
+        properties: ["Bright chrome/piano black", "Flexible sealing lips", "Co-extruded steel insert"],
+        benefits: ["Premium frame styling", "Anti-stretch design", "Wind noise isolation"],
+        app: "Executive sedans, SUVs"
+      },
+      {
+        id: "bonded-seals",
+        title: "Bonded Seals",
+        category: "specialty",
+        desc: "Direct rubber-to-metal vulcanized components for static mechanical assemblies.",
+        properties: ["Chemically bonded elastomer", "Corrosion resistant plates", "High torque tolerance"],
+        benefits: ["Zero micro-leak paths", "Dampens structure rattle", "Long service life"],
+        app: "Engine firewall panels, HVAC doors"
+      },
+      {
+        id: "bumpers",
+        title: "Dense Sealing Bumpers",
+        category: "specialty",
+        desc: "High-grade compression vulcanized rubber stoppers for structural impact absorbing.",
+        properties: ["High Shore A EPDM", "Custom thread studs", "Excellent compression set"],
+        benefits: ["Impact shock isolation", "Rust-free mounts", "Silent trunk/hood closures"],
+        app: "Tailgates, Engine Hoods, Gloveboxes"
+      },
+      {
+        id: "c-post-lower-seal",
+        title: "C-Post Lower Auxiliary Seal",
+        category: "aperture",
+        desc: "Specialty compression seal covering the complex body joint at the bottom of the C-pillar.",
+        properties: ["Varying density sponge", "Pre-applied acrylic tape", "High flexibility"],
+        benefits: ["Acoustic deadening", "Rear water drainage path", "Perfect fitment"],
+        app: "Fastbacks, Hatchbacks, Premium Sedans"
+      },
+      {
+        id: "cellular-foams",
+        title: "Cellular & Spongy Rubber Foams",
+        category: "specialty",
+        desc: "Closed-cell microcellular EPDM sponge rolls designed for lightweight isolation pads.",
+        properties: ["Closed-cell moisture block", "Low density (0.4-0.6 g/cm\u00b3)", "High compressibility"],
+        benefits: ["Extreme thermal insulation", "Vibration absorption", "Ultra-light weight"],
+        app: "HVAC sealing, door inner panel barriers"
+      },
+      {
+        id: "compact-rubber-sheets",
+        title: "Compact EPDM Rubber Sheets",
+        category: "specialty",
+        desc: "High-tensile, chemical-resistant EPDM sheets for heavy-duty barrier gaskets.",
+        properties: ["High tensile EPDM", "Excellent ozone resistance", "Custom thicknesses"],
+        benefits: ["Structural durability", "Chemical isolation", "Tear resistant"],
+        app: "Under-hood fluid barriers, splash guards"
+      },
+      {
+        id: "door-seal-on-door",
+        title: "Door Seal on Door (Primary)",
+        category: "aperture",
+        desc: "Primary door perimeter bulb seal installed directly onto the moving door sheet flange.",
+        properties: ["Co-extruded slip coat", "Optimized ventilation holes", "Flexible steel clip core"],
+        benefits: ["Primary water block", "Substantial cabin quietness", "Corrosion protection"],
+        app: "Executive passenger sedans"
+      },
+      {
+        id: "door-to-door-seal",
+        title: "Acoustic Door to Door Seal",
+        category: "aperture",
+        desc: "Center pillar (B-pillar) auxiliary seal bridging the vertical front-to-rear door gap.",
+        properties: ["High elastic EPDM bulb", "Specially treated slip coating", "UV aging resistant"],
+        benefits: ["Aero turbulence block", "Eliminates whistle noises", "Clean cabin door jams"],
+        app: "Luxury Coupes, Electric Sedans"
+      },
+      {
+        id: "epdm-door-seal-on-body",
+        title: "EPDM Door Seal on Body",
+        category: "aperture",
+        desc: "Classic high-compression dense-carrier/sponge-bulb aperture seal mounted on body sheet flange.",
+        properties: ["Co-extruded bulb & carrier", "Steel clip matrix insert", "Dense compound foot"],
+        benefits: ["Secondary safety seal", "Exceptional acoustic barrier", "Low door-slam resistance"],
+        app: "Standard passenger vehicles, trucks"
+      },
+      {
+        id: "epdm-grc-module",
+        title: "EPDM GRC Module & Encapsulation",
+        category: "beltline",
+        desc: "Integrated glass run module complete with dynamic runner and overmolded fixed quarter glass.",
+        properties: ["Overmolded PU/TPE joints", "Integrated dynamic tracks", "Pre-assembled glass modularity"],
+        benefits: ["Saves assembly line time", "Eliminates glass corner leaks", "High visual quality"],
+        app: "Premium rear doors with fixed quarter panels"
+      },
+      {
+        id: "epdm-tp-inner-belt",
+        title: "EPDM or TP Inner Belt Seal",
+        category: "beltline",
+        desc: "Inner door trim waist line seal with electrostatic flocked dynamic lips to glide against glass.",
+        properties: ["High flock density lip", "Low friction coefficient", "Flexible plastic/EPDM body"],
+        benefits: ["Scratch prevention", "Blocks cabin sound escape", "Moisture wipe"],
+        app: "All passenger vehicle inner door trims"
+      },
+      {
+        id: "epdm-tp-outer-belt",
+        title: "EPDM or TP Outer Belt Seal",
+        category: "beltline",
+        desc: "Weather strip sealing the exterior waist door beltline against glass, without trim finisher.",
+        properties: ["EPDM base + steel core", "Polyurethane low-drag coat", "UV robust rubber compound"],
+        benefits: ["Efficient water shedding", "Lower glass run noise", "Affordable durability"],
+        app: "Mass passenger segment cars"
+      },
+      {
+        id: "glass-encapsulation-body",
+        title: "Glass Encapsulation on Body",
+        category: "beltline",
+        desc: "Pre-molded polyurethane or TPE profile directly encapsulating glass borders for static mounting.",
+        properties: ["Highly aesthetic joints", "Integrated metal fasteners", "Primerless glass adhesion"],
+        benefits: ["Zero dynamic whistle", "Flush surface finish", "Fast body mount click"],
+        app: "Fixed panoramic roofs, static quarter windows"
+      },
+      {
+        id: "grommets",
+        title: "Dynamic & Static Grommets",
+        category: "specialty",
+        desc: "Premium dense EPDM sleeves designed to route wiring harnesses securely through firewall sheets.",
+        properties: ["Excellent stretch durometer", "Triple dynamic water barriers", "Tear-free EPDM formula"],
+        benefits: ["Perfect engine water isolation", "Noise path blocking", "Wire sheath protection"],
+        app: "Chassis pass-throughs, door harness hinges"
+      },
+      {
+        id: "wheel-arch-seals",
+        title: "Wheel Arch Sealing Systems",
+        category: "specialty",
+        desc: "Impact-resilient TPV and polypropylene shields sealing the wheel well against engine noise.",
+        properties: ["High impact PP/TPV compound", "Flexible mud-shed lip", "Stone chip resistant"],
+        benefits: ["Drastically lowers cabin road rumble", "Rust prevention", "Aero efficiency"],
+        app: "Luxury SUVs, Premium Electric Crossovers"
+      },
+      {
+        id: "acoustic-foams",
+        title: "Acoustic Foam Insulation",
+        category: "specialty",
+        desc: "Custom die-cut open and closed cell PU/EPDM foam inserts tailored for interior cavity blocks.",
+        properties: ["High sound absorption rating", "Flame retardant compound", "Self-adhesive backings"],
+        benefits: ["Blocks structure airborne sound", "Prevents metallic echo", "Lightweighting"],
+        app: "Door interior cavities, A/B/C Pillar voids"
+      },
+      {
+        id: "hybrid-vehicle-seals",
+        title: "Hybrid Vehicle Sealing Systems",
+        category: "specialty",
+        desc: "Specialized thermal preservation seals designed to insulate the cabin during engine-off hybrid runs.",
+        properties: ["Premium microcellular chambers", "Low thermal leakage", "Aero efficient profile"],
+        benefits: ["Saves cabin battery heater load", "Silent EV mode cabin", "High durability"],
+        app: "Plug-in Hybrid (PHEV) platforms"
+      },
+      {
+        id: "frameless-door-seals",
+        title: "Frameless Door Sealing Solutions",
+        category: "specialty",
+        desc: "Complex dynamic multi-lip compression seals engineered to contact glass directly without metal pillars.",
+        properties: ["Multi-stage bulb compression", "Integrated micro-switch recesses", "Polytetrahydrofuran low-friction coat"],
+        benefits: ["Enables frameless aesthetic", "Guarantees high-speed water seal", "Reduces door closing stress"],
+        app: "Premium Coupes, Convertibles, Luxury BEVs"
+      },
+      {
+        id: "channel-mounted-seals",
+        title: "Channel Mounted Sealing Systems",
+        category: "specialty",
+        desc: "Slide-in structural mechanical weather strips locked directly into specialized chassis rail channels.",
+        properties: ["Mechanical slide lock tail", "Zero-glue fitment concept", "Dual EPDM compound foot"],
+        benefits: ["Zero peeling risk", "Eco friendly dry assembly", "Extremely fast service replacement"],
+        app: "Frameless utility cabins, modular EV trucks"
+      }
+    ];
+
+    // Global filters state
+    let activeCategory = 'all';
+    let searchTerm = '';
+
+    // Render SVGs based on product ID
+    function getProductSVG(id) {
+      // Return matching SVG drawing based on product ID
+      switch(id) {
+        case "flush-glazing":
+          return `
+            <g>
+              <path d="M10,80 L35,65 L35,25" stroke="url(#epdm-dense)" stroke-width="8" stroke-linecap="round" />
+              <path d="M25,60 C25,45 50,40 50,25" stroke="url(#epdm-dense)" stroke-width="12" stroke-linecap="round" />
+              <path d="M25,60 C25,45 50,40 50,25" stroke="url(#rim-glow)" stroke-width="1" stroke-linecap="round" opacity="0.6" />
+              <path d="M32,48 C32,40 45,38 45,28" stroke="url(#epdm-sponge)" stroke-width="8" stroke-linecap="round" />
+              <path d="M32,48 C32,40 45,38 45,28" stroke="url(#sponge-pores)" stroke-width="8" stroke-linecap="round" />
+              <path d="M50,15 L90,15" stroke="url(#glass-pane)" stroke-width="6" stroke-linecap="round" />
+              <line x1="50" y1="12" x2="90" y2="12" stroke="#00E5FF" stroke-width="1.2" opacity="0.8" />
+            </g>
+          `;
+        case "tpv-door-seal":
+          return `
+            <g>
+              <path d="M20,75 C20,60 30,55 45,55" stroke="#718096" stroke-width="3" fill="none" />
+              <path d="M15,80 C15,50 35,45 50,45" stroke="url(#tpv-mat)" stroke-width="10" stroke-linecap="round" fill="none" />
+              <circle cx="50" cy="30" r="14" fill="url(#tpv-mat)" stroke="url(#rim-glow)" stroke-width="1.5" />
+              <circle cx="70" cy="45" r="11" fill="url(#tpv-mat)" stroke="url(#rim-glow)" stroke-width="1" />
+              <path d="M50,44 L70,56" stroke="#EF4444" stroke-width="1.5" stroke-linecap="round" opacity="0.9" />
+            </g>
+          `;
+        case "belt-seal":
+          return `
+            <g>
+              <path d="M25,80 V40 H45 V65" stroke="#A0AEC0" stroke-width="2.5" fill="none" />
+              <path d="M20,85 V35 H50 V70" stroke="url(#epdm-dense)" stroke-width="8" stroke-linecap="round" fill="none" />
+              <rect x="16" y="22" width="38" height="12" rx="4" fill="url(#chrome-molding)" stroke="#FFFFFF" stroke-width="0.8" />
+              <line x1="18" y1="25" x2="52" y2="25" stroke="#FFFFFF" stroke-width="1.5" opacity="0.75" />
+              <path d="M50,42 Q75,45 70,65" stroke="url(#epdm-sponge)" stroke-width="5" stroke-linecap="round" fill="none" />
+              <path d="M50,42 Q75,45 70,65" stroke="url(#flock-texture)" stroke-width="5" stroke-linecap="round" fill="none" />
+            </g>
+          `;
+        case "glass-run":
+          return `
+            <g>
+              <path d="M20,20 V75 H80 V20" stroke="url(#epdm-dense)" stroke-width="10" stroke-linecap="round" fill="none" />
+              <path d="M25,25 C30,35 45,40 45,55" stroke="url(#epdm-sponge)" stroke-width="6" stroke-linecap="round" fill="none" />
+              <path d="M25,25 C30,35 45,40 45,55" stroke="url(#flock-texture)" stroke-width="6" stroke-linecap="round" fill="none" />
+              <path d="M75,25 C70,35 55,40 55,55" stroke="url(#epdm-sponge)" stroke-width="6" stroke-linecap="round" fill="none" />
+              <path d="M75,25 C70,35 55,40 55,55" stroke="url(#flock-texture)" stroke-width="6" stroke-linecap="round" fill="none" />
+              <rect x="46" y="10" width="8" height="60" rx="2" fill="url(#glass-pane)" stroke="url(#rim-glow)" stroke-width="0.8" />
+            </g>
+          `;
+        case "2k-door-door-below-belt":
+          return `
+            <g>
+              <path d="M15,70 C15,40 35,35 55,35" stroke="url(#epdm-dense)" stroke-width="12" stroke-linecap="round" fill="none" />
+              <path d="M45,35 C55,35 85,45 80,75" stroke="url(#epdm-sponge)" stroke-width="8" stroke-linecap="round" fill="none" />
+              <path d="M45,35 C55,35 85,45 80,75" stroke="url(#sponge-pores)" stroke-width="8" stroke-linecap="round" fill="none" />
+              <path d="M80,50 C82,58 78,72 74,75" stroke="#00E5FF" stroke-width="2.5" stroke-linecap="round" fill="none" />
+            </g>
+          `;
+        case "2k-door-fender":
+          return `
+            <g>
+              <path d="M15,20 L30,55" stroke="#4A5568" stroke-width="5" stroke-linecap="round" />
+              <rect x="26" y="45" width="10" height="15" fill="#718096" rx="2" />
+              <circle cx="48" cy="50" r="13" fill="url(#tpv-mat)" stroke="url(#rim-glow)" stroke-width="1.2" />
+              <circle cx="68" cy="50" r="9" fill="url(#tpv-mat)" stroke="url(#rim-glow)" stroke-width="0.8" opacity="0.75" />
+              <path d="M72,25 L85,75" stroke="#2D3748" stroke-width="5" stroke-linecap="round" />
+            </g>
+          `;
+        case "2k-upper-frame-finisher":
+          return `
+            <g>
+              <path d="M15,80 V40 H85 V80" stroke="url(#epdm-dense)" stroke-width="8" stroke-linecap="round" fill="none" />
+              <path d="M19,75 V44 H81 V75" stroke="#CBD5E0" stroke-width="1.5" fill="none" />
+              <path d="M10,36 H90" stroke="url(#chrome-molding)" stroke-width="6" stroke-linecap="round" />
+              <line x1="12" y1="34" x2="88" y2="34" stroke="#FFFFFF" stroke-width="1" />
+            </g>
+          `;
+        case "bonded-seals":
+          return `
+            <g>
+              <path d="M15,75 H85 V60 H15 Z" fill="#718096" stroke="#4A5568" stroke-width="1" />
+              <path d="M25,60 C25,30 75,30 75,60" fill="url(#epdm-dense)" stroke="url(#rim-glow)" stroke-width="1.5" />
+              <path d="M25,60 H75" stroke="#00E5FF" stroke-width="2.5" stroke-linecap="round" opacity="0.9" />
+            </g>
+          `;
+        case "bumpers":
+          return `
+            <g>
+              <rect x="46" y="55" width="8" height="30" fill="url(#chrome-molding)" stroke="#718096" stroke-width="0.5" />
+              <line x1="46" y1="65" x2="54" y2="65" stroke="#4A5568" stroke-width="1" />
+              <line x1="46" y1="73" x2="54" y2="73" stroke="#4A5568" stroke-width="1" />
+              <path d="M25,25 H75 L62,55 H38 Z" fill="url(#epdm-dense)" stroke="url(#rim-glow)" stroke-width="1" />
+              <ellipse cx="50" cy="25" rx="25" ry="6" fill="#4A5568" />
+            </g>
+          `;
+        case "c-post-lower-seal":
+          return `
+            <g>
+              <path d="M15,20 L85,45" stroke="url(#glass-pane)" stroke-width="8" stroke-linecap="round" />
+              <path d="M20,40 C35,28 65,40 80,55" stroke="url(#epdm-sponge)" stroke-width="10" stroke-linecap="round" fill="none" />
+              <path d="M20,40 C35,28 65,40 80,55" stroke="url(#sponge-pores)" stroke-width="10" stroke-linecap="round" fill="none" />
+              <path d="M22,46 C36,36 63,47 76,60" stroke="#EF4444" stroke-width="1.8" stroke-linecap="round" fill="none" />
+            </g>
+          `;
+        case "cellular-foams":
+          return `
+            <g>
+              <rect x="15" y="15" width="70" height="70" rx="10" fill="url(#epdm-sponge)" stroke="url(#rim-glow)" stroke-width="1.5" />
+              <rect x="15" y="15" width="70" height="70" rx="10" fill="url(#sponge-pores)" />
+              <path d="M30,35 Q50,25 70,35" stroke="#00E5FF" stroke-width="1.5" stroke-linecap="round" opacity="0.6" />
+              <path d="M30,50 Q50,40 70,50" stroke="#00E5FF" stroke-width="1.5" stroke-linecap="round" opacity="0.6" />
+              <path d="M30,65 Q50,55 70,65" stroke="#00E5FF" stroke-width="1.5" stroke-linecap="round" opacity="0.6" />
+            </g>
+          `;
+        case "compact-rubber-sheets":
+          return `
+            <g>
+              <path d="M15,70 L85,55 L85,45 L15,60 Z" fill="url(#epdm-dense)" stroke="#2D3748" stroke-width="0.8" />
+              <path d="M15,50 L85,35 L85,25 L15,40 Z" fill="url(#epdm-dense)" stroke="#2D3748" stroke-width="0.8" />
+              <line x1="15" y1="60" x2="85" y2="45" stroke="#00E5FF" stroke-width="1.5" opacity="0.8" />
+              <line x1="15" y1="40" x2="85" y2="25" stroke="#2563EB" stroke-width="1.5" opacity="0.8" />
+            </g>
+          `;
+        case "door-seal-on-door":
+          return `
+            <g>
+              <path d="M20,80 V45 H40" stroke="#4A5568" stroke-width="6" stroke-linecap="round" fill="none" />
+              <circle cx="58" cy="45" r="14" fill="url(#epdm-sponge)" stroke="url(#rim-glow)" stroke-width="1.5" />
+              <circle cx="58" cy="45" r="14" fill="url(#sponge-pores)" />
+              <circle cx="58" cy="38" r="1.8" fill="#1A202C" />
+              <circle cx="68" cy="45" r="1.8" fill="#1A202C" />
+            </g>
+          `;
+        case "door-to-door-seal":
+          return `
+            <g>
+              <path d="M30,15 V85" stroke="#2D3748" stroke-width="8" stroke-linecap="round" />
+              <path d="M34,35 Q65,40 55,60" stroke="url(#epdm-dense)" stroke-width="8" stroke-linecap="round" fill="none" />
+              <path d="M34,35 Q65,40 55,60" stroke="url(#rim-glow)" stroke-width="1" stroke-linecap="round" fill="none" opacity="0.6" />
+              <path d="M34,65 Q70,70 65,85" stroke="url(#epdm-dense)" stroke-width="6" stroke-linecap="round" fill="none" />
+              <path d="M55,60 C53,55 50,45 45,40" stroke="#00E5FF" stroke-width="1.5" stroke-linecap="round" fill="none" />
+            </g>
+          `;
+        case "epdm-door-seal-on-body":
+          return `
+            <g>
+              <path d="M15,75 V50 H35" stroke="#718096" stroke-width="4" fill="none" />
+              <path d="M10,80 V45 H40 V65" stroke="url(#epdm-dense)" stroke-width="10" stroke-linecap="round" fill="none" />
+              <circle cx="60" cy="45" r="15" fill="url(#epdm-sponge)" stroke="url(#rim-glow)" stroke-width="1.5" />
+              <circle cx="60" cy="45" r="15" fill="url(#sponge-pores)" />
+            </g>
+          `;
+        case "epdm-grc-module":
+          return `
+            <g>
+              <path d="M15,75 V25 H75" stroke="url(#epdm-dense)" stroke-width="16" stroke-linecap="round" fill="none" />
+              <path d="M15,75 V25 H75" stroke="url(#rim-glow)" stroke-width="1" stroke-linecap="round" fill="none" opacity="0.6" />
+              <path d="M23,75 V33 H75" stroke="#1A202C" stroke-width="4" fill="none" />
+              <rect x="33" y="38" width="52" height="42" rx="4" fill="url(#glass-pane)" stroke="#00E5FF" stroke-width="1" />
+            </g>
+          `;
+        case "epdm-tp-inner-belt":
+          return `
+            <g>
+              <path d="M15,75 H85 V65" stroke="#2D3748" stroke-width="4" fill="none" />
+              <path d="M20,65 H80" stroke="url(#epdm-dense)" stroke-width="8" stroke-linecap="round" />
+              <path d="M30,61 Q50,40 70,61" stroke="url(#epdm-sponge)" stroke-width="6" stroke-linecap="round" fill="none" />
+              <path d="M30,61 Q50,40 70,61" stroke="url(#flock-texture)" stroke-width="6" stroke-linecap="round" fill="none" />
+            </g>
+          `;
+        case "epdm-tp-outer-belt":
+          return `
+            <g>
+              <path d="M15,75 V55 H30" stroke="#718096" stroke-width="4" fill="none" />
+              <path d="M25,55 H85" stroke="url(#epdm-dense)" stroke-width="8" stroke-linecap="round" />
+              <path d="M25,55 H85" stroke="url(#rim-glow)" stroke-width="1" stroke-linecap="round" opacity="0.5" />
+              <path d="M40,51 Q60,30 80,51" stroke="url(#epdm-sponge)" stroke-width="6" stroke-linecap="round" fill="none" />
+              <path d="M40,51 Q60,30 80,51" stroke="url(#flock-texture)" stroke-width="6" stroke-linecap="round" fill="none" />
+            </g>
+          `;
+        case "glass-encapsulation-body":
+          return `
+            <g>
+              <rect x="25" y="15" width="50" height="50" rx="4" fill="url(#glass-pane)" stroke="url(#rim-glow)" stroke-width="1" />
+              <rect x="20" y="10" width="60" height="60" rx="8" stroke="url(#epdm-dense)" stroke-width="8" fill="none" />
+              <rect x="20" y="10" width="60" height="60" rx="8" stroke="#00E5FF" stroke-width="1" fill="none" opacity="0.7" />
+              <circle cx="35" cy="76" r="3.5" fill="url(#chrome-molding)" />
+              <circle cx="65" cy="76" r="3.5" fill="url(#chrome-molding)" />
+            </g>
+          `;
+        case "grommets":
+          return `
+            <g>
+              <line x1="10" y1="50" x2="90" y2="50" stroke="#4A5568" stroke-width="6" />
+              <rect x="25" y="30" width="50" height="40" rx="6" fill="url(#epdm-dense)" stroke="url(#rim-glow)" stroke-width="1.5" />
+              <circle cx="50" cy="50" r="10" fill="#1A202C" />
+              <path d="M45,50 H55" stroke="#EF4444" stroke-width="2.5" />
+              <path d="M50,45 V55" stroke="#3B82F6" stroke-width="2.5" />
+            </g>
+          `;
+        case "wheel-arch-seals":
+          return `
+            <g>
+              <path d="M15,75 Q50,15 85,75" stroke="#2D3748" stroke-width="12" stroke-linecap="round" fill="none" />
+              <path d="M15,75 Q50,15 85,75" stroke="url(#tpv-mat)" stroke-width="8" stroke-linecap="round" fill="none" />
+              <path d="M15,75 Q50,15 85,75" stroke="url(#rim-glow)" stroke-width="1.5" stroke-linecap="round" fill="none" opacity="0.9" />
+            </g>
+          `;
+        case "acoustic-foams":
+          return `
+            <g>
+              <path d="M20,20 H50 L55,30 H80 V80 H45 L40,70 H20 Z" fill="url(#epdm-sponge)" stroke="url(#rim-glow)" stroke-width="1.2" />
+              <path d="M20,20 H50 L55,30 H80 V80 H45 L40,70 H20 Z" fill="url(#sponge-pores)" />
+              <rect x="28" y="35" width="20" height="2" fill="#00E5FF" opacity="0.6" />
+              <rect x="28" y="45" width="35" height="2" fill="#00E5FF" opacity="0.6" />
+              <rect x="42" y="55" width="25" height="2" fill="#2563EB" opacity="0.6" />
+            </g>
+          `;
+        case "hybrid-vehicle-seals":
+          return `
+            <g>
+              <rect x="20" y="20" width="60" height="60" rx="10" fill="url(#epdm-dense)" stroke="url(#rim-glow)" stroke-width="1.5" />
+              <circle cx="38" cy="38" r="8" fill="#1A202C" stroke="#00E5FF" stroke-width="1.2" />
+              <circle cx="62" cy="38" r="8" fill="#1A202C" stroke="#00E5FF" stroke-width="1.2" />
+              <circle cx="50" cy="62" r="10" fill="#1A202C" stroke="#2563EB" stroke-width="1.2" />
+              <circle cx="38" cy="38" r="4" fill="#00E5FF" opacity="0.8" />
+              <circle cx="62" cy="38" r="4" fill="#00E5FF" opacity="0.8" />
+            </g>
+          `;
+        case "frameless-door-seals":
+          return `
+            <g>
+              <path d="M15,75 C15,35 30,25 55,25" stroke="url(#epdm-dense)" stroke-width="14" stroke-linecap="round" fill="none" />
+              <path d="M15,75 C15,35 30,25 55,25" stroke="url(#rim-glow)" stroke-width="1.5" stroke-linecap="round" fill="none" opacity="0.8" />
+              <path d="M55,25 C75,25 90,45 85,75" stroke="url(#epdm-sponge)" stroke-width="10" stroke-linecap="round" fill="none" />
+              <path d="M55,25 C75,25 90,45 85,75" stroke="url(#sponge-pores)" stroke-width="10" stroke-linecap="round" fill="none" />
+              <path d="M48,25 H62" stroke="#EF4444" stroke-width="2" stroke-linecap="round" opacity="0.9" />
+            </g>
+          `;
+        case "channel-mounted-seals":
+          return `
+            <g>
+              <path d="M15,25 H85 V45 H65 V80 H35 V45 H15 Z" fill="#718096" stroke="#4A5568" stroke-width="1" />
+              <path d="M40,75 L60,75 L55,50 H45 Z" fill="url(#epdm-dense)" stroke="#00E5FF" stroke-width="0.8" />
+              <circle cx="50" cy="22" r="14" fill="url(#epdm-sponge)" stroke="url(#rim-glow)" stroke-width="1.5" />
+              <circle cx="50" cy="22" r="14" fill="url(#sponge-pores)" />
+            </g>
+          `;
+        default:
+          return `<path d="M10,20 Q40,10 70,20 T90,60" stroke="url(#rim-glow)" stroke-width="2" stroke-linecap="round" />`;
+      }
+    }
+
+    // Dynamic catalog renderer
+    function renderCatalogGrid() {
+      const grid = document.getElementById('products-grid');
+      const emptyState = document.getElementById('empty-state');
+      grid.innerHTML = '';
+      
+      const filtered = CATALOG_PRODUCTS.filter(prod => {
+        const matchesCat = activeCategory === 'all' || prod.category === activeCategory;
+        const matchesSearch = prod.title.toLowerCase().includes(searchTerm.toLowerCase()) || 
+                              prod.desc.toLowerCase().includes(searchTerm.toLowerCase());
+        return matchesCat && matchesSearch;
+      });
+
+      // Update count label
+      document.getElementById('catalog-count-label').textContent = `Showing ${filtered.length} certified vehicle sealing systems.`;
+
+      if (filtered.length === 0) {
+        emptyState.classList.remove('hidden');
+        return;
+      } else {
+        emptyState.classList.add('hidden');
+      }
+
+      filtered.forEach(prod => {
+        const card = document.createElement('div');
+        card.className = "group relative p-6 rounded-xl bg-brand-card border border-white/5 hover:border-brand-cyan/20 hover:shadow-[0_8px_30px_rgba(0,229,255,0.06)] transition-all duration-300 flex flex-col justify-between";
+        
+        card.innerHTML = `
+          <div class="space-y-4">
+            <!-- 3D Parallax visual container -->
+            <div class="perspective-container relative h-44 w-full bg-[#080B14] border border-white/5 rounded-xl overflow-hidden flex items-center justify-center cursor-pointer group-hover:bg-brand-blue/5 transition-colors duration-300">
+              <!-- Sweep shine -->
+              <div class="gloss-sweep absolute inset-0 z-20 pointer-events-none mix-blend-overlay"></div>
+              
+              <!-- Grid BG -->
+              <div class="absolute inset-0 tech-grid opacity-15 pointer-events-none"></div>
+              
+              <!-- Glow rim -->
+              <div class="absolute -inset-px rounded-xl border border-brand-cyan/0 group-hover:border-brand-cyan/20 transition-colors duration-500 z-10 pointer-events-none"></div>
+              
+              <!-- SVG Target -->
+              <div class="parallax-target relative w-full h-full flex items-center justify-center">
+                <svg class="h-28 w-44 drop-shadow-[0_8px_24px_rgba(0,0,0,0.85)] filter group-hover:drop-shadow-[0_12px_32px_rgba(0,229,255,0.25)] transition-all duration-500" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <defs>
+                    <linearGradient id="epdm-dense" x1="0%" y1="0%" x2="100%" y2="100%">
+                      <stop offset="0%" stop-color="#1E2433" />
+                      <stop offset="40%" stop-color="#0F121C" />
+                      <stop offset="100%" stop-color="#030507" />
+                    </linearGradient>
+                    <linearGradient id="epdm-sponge" x1="0%" y1="0%" x2="100%" y2="0%">
+                      <stop offset="0%" stop-color="#4A5568" />
+                      <stop offset="50%" stop-color="#2D3748" />
+                      <stop offset="100%" stop-color="#1A202C" />
+                    </linearGradient>
+                    <linearGradient id="tpv-mat" x1="0%" y1="0%" x2="100%" y2="100%">
+                      <stop offset="0%" stop-color="#323C52" />
+                      <stop offset="30%" stop-color="#181D26" />
+                      <stop offset="100%" stop-color="#090C10" />
+                    </linearGradient>
+                    <linearGradient id="chrome-molding" x1="0%" y1="0%" x2="0%" y2="100%">
+                      <stop offset="0%" stop-color="#FFFFFF" />
+                      <stop offset="25%" stop-color="#CBD5E0" />
+                      <stop offset="50%" stop-color="#4A5568" />
+                      <stop offset="75%" stop-color="#EDF2F7" />
+                      <stop offset="100%" stop-color="#A0AEC0" />
+                    </linearGradient>
+                    <linearGradient id="glass-pane" x1="0%" y1="0%" x2="100%" y2="0%">
+                      <stop offset="0%" stop-color="rgba(0, 229, 255, 0.4)" />
+                      <stop offset="40%" stop-color="rgba(37, 99, 235, 0.1)" />
+                      <stop offset="100%" stop-color="rgba(0, 229, 255, 0.05)" />
+                    </linearGradient>
+                    <linearGradient id="rim-glow" x1="0%" y1="0%" x2="100%" y2="0%">
+                      <stop offset="0%" stop-color="#00E5FF" />
+                      <stop offset="100%" stop-color="#2563EB" />
+                    </linearGradient>
+                    <pattern id="sponge-pores" width="3" height="3" patternUnits="userSpaceOnUse">
+                      <circle cx="1.5" cy="1.5" r="0.6" fill="#1A202C" opacity="0.65" />
+                    </pattern>
+                    <pattern id="flock-texture" width="4" height="4" patternUnits="userSpaceOnUse">
+                      <line x1="0" y1="0" x2="0" y2="4" stroke="#718096" stroke-width="0.5" opacity="0.8" />
+                    </pattern>
+                  </defs>
+                  ${getProductSVG(prod.id)}
+                </svg>
+              </div>
+            </div>
+
+            <!-- Details -->
+            <div class="space-y-2">
+              <h4 class="font-display text-base font-bold text-white group-hover:text-brand-cyan transition-colors">
+                ${prod.title}
+              </h4>
+              <p class="text-slate-400 text-xs leading-relaxed min-h-[48px]">
+                ${prod.desc}
+              </p>
+            </div>
+
+            <!-- Technical properties -->
+            <div class="space-y-1.5 pt-2">
+              <p class="text-[10px] uppercase tracking-wider font-bold text-slate-400">Technical Properties</p>
+              <ul class="space-y-1 text-xs text-slate-300">
+                ${prod.properties.map(p => `
+                  <li class="flex items-center">
+                    <span class="h-1.5 w-1.5 rounded-full bg-brand-cyan/60 mr-2 shrink-0"></span>
+                    <span class="truncate">${p}</span>
+                  </li>
+                `).join('')}
+              </ul>
+            </div>
+
+            <!-- Vehicle benefits -->
+            <div class="space-y-1.5">
+              <p class="text-[10px] uppercase tracking-wider font-bold text-slate-400">Vehicle Benefits</p>
+              <ul class="space-y-1 text-xs text-slate-300">
+                ${prod.benefits.map(b => `
+                  <li class="flex items-center">
+                    <span class="h-1 w-2 bg-brand-blue mr-2 rounded-full shrink-0"></span>
+                    <span class="truncate">${b}</span>
+                  </li>
+                `).join('')}
+              </ul>
+            </div>
+
+            <!-- Applications info -->
+            <div class="text-[10px] text-slate-400 pt-2 border-t border-white/5">
+              <span class="font-bold text-slate-300">Application:</span> ${prod.app}
+            </div>
+          </div>
+
+          <div class="pt-6 flex gap-3">
+            <a href="contact.html?product=${prod.id}" class="flex-grow text-center py-2.5 rounded-lg text-xs font-bold text-white bg-gradient-to-r from-brand-blue to-brand-accent hover:shadow-[0_0_15px_rgba(37,99,235,0.4)] transition-all duration-300 cursor-pointer">
+              Request Quote
+            </a>
+            <a href="contact.html?product=${prod.id}&info=true" class="px-3 py-2.5 rounded-lg text-xs font-bold text-slate-400 border border-slate-800 hover:text-white hover:border-slate-500 transition-colors">
+              Learn More
+            </a>
+          </div>
+        `;
+        
+        grid.appendChild(card);
+        setupParallax(card.querySelector('.perspective-container'));
+      });
+      lucide.createIcons();
+    }
+
+    // Parallax logic handler
+    function setupParallax(element) {
+      const gloss = element.querySelector('.gloss-sweep');
+      const target = element.querySelector('.parallax-target');
+      
+      element.addEventListener('mousemove', (e) => {
+        const rect = element.getBoundingClientRect();
+        const width = rect.width;
+        const height = rect.height;
+        const mouseX = e.clientX - rect.left - width / 2;
+        const mouseY = e.clientY - rect.top - height / 2;
+        
+        // Calculate degree rotations
+        const rotateX = -(mouseY / height) * 20; 
+        const rotateY = (mouseX / width) * 20;
+        
+        target.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+        
+        // Glare gloss sweep
+        const glossPercent = ((e.clientX - rect.left) / width) * 200 - 50;
+        gloss.style.background = `linear-gradient(115deg, transparent ${glossPercent - 35}%, rgba(255, 255, 255, 0.15) ${glossPercent}%, transparent ${glossPercent + 35}%)`;
+      });
+      
+      element.addEventListener('mouseleave', () => {
+        target.style.transform = `rotateX(0deg) rotateY(0deg)`;
+        gloss.style.background = 'transparent';
+      });
+    }
+
+    // Category Filter Selection
+    function filterCategory(catId) {
+      activeCategory = catId;
+      
+      // Update buttons style
+      const btns = document.querySelectorAll('#categories-container button');
+      btns.forEach(btn => {
+        if (btn.id === `cat-${catId}`) {
+          btn.className = "relative px-4 py-2.5 rounded-lg text-xs font-bold tracking-wide transition-colors cursor-pointer text-white bg-brand-blue border border-brand-cyan/20";
+        } else {
+          btn.className = "relative px-4 py-2.5 rounded-lg text-xs font-bold tracking-wide transition-colors cursor-pointer text-slate-400 hover:text-white";
+        }
+      });
+
+      renderCatalogGrid();
+      
+      // Smooth scroll back to grid top when switching
+      const grid = document.getElementById('catalog-grid');
+      if (grid) {
+        grid.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }
+
+    // Search bar handler
+    function handleSearch() {
+      searchTerm = document.getElementById('search-input').value;
+      renderCatalogGrid();
+    }
+
+    // Initial catalog render
+    document.addEventListener("DOMContentLoaded", () => {
+      renderCatalogGrid();
+    });
+  </script>
+</body>
+</html>

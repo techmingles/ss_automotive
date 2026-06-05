@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth h-full antialiased">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Capabilities & Services | SS Automotive Engineering</title>
+  <meta name="description" content="Explore our specialized automotive competencies spanning structural elastomeric design, physical molding execution, prototyping, and customized checking fixtures.">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Tailwind CSS Play CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              dark: '#070B16',
+              card: '#0F1626',
+              cyan: '#00E5FF',
+              blue: '#2563EB',
+              accent: '#3B82F6',
+              'gray-dark': '#1E293B',
+              'gray-light': '#F8FAFC',
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+            display: ['Outfit', 'system-ui', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="flex min-h-full flex-col bg-brand-dark text-slate-100 font-sans">
+
+  <!-- HEADER / NAVBAR -->
+  <header id="main-header" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 py-6 border-b border-transparent bg-transparent">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between">
+        <!-- Logo -->
+        <a href="index.html" class="flex items-center space-x-2 group">
+          <div class="flex h-10 w-10 items-center justify-center rounded-lg bg-brand-accent/10 border border-brand-cyan/30 text-brand-cyan transition-colors duration-300 group-hover:bg-brand-accent group-hover:text-white">
+            <i data-lucide="cpu" class="h-5 w-5 animate-pulse-slow"></i>
+          </div>
+          <div class="flex flex-col">
+            <span class="font-display text-lg font-black tracking-widest text-white group-hover:text-brand-cyan transition-colors duration-300">
+              SS AUTOMOTIVE
+            </span>
+            <span class="text-[10px] uppercase tracking-wider text-slate-400">
+              Engineering Sealing Systems
+            </span>
+          </div>
+        </a>
+
+        <!-- Desktop Nav -->
+        <nav class="hidden md:flex items-center space-x-8">
+          <a href="index.html" class="relative text-sm font-medium tracking-wide text-slate-300 hover:text-white transition-colors duration-300 py-1">
+            Home
+          </a>
+          <a href="about.html" class="relative text-sm font-medium tracking-wide text-slate-300 hover:text-white transition-colors duration-300 py-1">
+            About
+          </a>
+          <a href="services.html" class="relative text-sm font-medium tracking-wide text-brand-cyan transition-colors duration-300 py-1">
+            Services
+            <span class="absolute bottom-0 left-0 right-0 h-[2px] bg-brand-cyan"></span>
+          </a>
+          <a href="products.html" class="relative text-sm font-medium tracking-wide text-slate-300 hover:text-white transition-colors duration-300 py-1">
+            Products
+          </a>
+          <a href="contact.html" class="relative text-sm font-medium tracking-wide text-slate-300 hover:text-white transition-colors duration-300 py-1">
+            Contact
+          </a>
+        </nav>
+
+        <!-- Action Button -->
+        <div class="hidden md:block">
+          <a href="contact.html?quote=true" class="inline-flex items-center justify-center px-5 py-2.5 rounded-lg text-sm font-semibold tracking-wide text-white bg-gradient-to-r from-brand-blue to-brand-accent hover:shadow-[0_0_20px_rgba(37,99,235,0.4)] transition-all duration-300 cursor-pointer">
+            Get a Quote
+          </a>
+        </div>
+
+        <!-- Hamburger button -->
+        <button id="menu-toggle" class="md:hidden flex h-10 w-10 items-center justify-center rounded-lg border border-slate-700 text-slate-300 hover:text-white hover:border-slate-500 transition-colors" aria-label="Toggle navigation menu">
+          <i data-lucide="menu" id="menu-icon" class="h-5 w-5"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile drawer menu -->
+    <div id="mobile-menu" class="hidden md:hidden absolute top-full left-0 right-0 glass-panel border-t border-white/5 shadow-2xl py-6 px-4 space-y-4">
+      <div class="flex flex-col space-y-3">
+        <a href="index.html" class="block py-3 px-4 rounded-lg font-medium text-base text-slate-300 hover:bg-white/5 hover:text-white">Home</a>
+        <a href="about.html" class="block py-3 px-4 rounded-lg font-medium text-base text-slate-300 hover:bg-white/5 hover:text-white">About</a>
+        <a href="services.html" class="block py-3 px-4 rounded-lg font-medium text-base bg-brand-accent/10 text-brand-cyan border-l-2 border-brand-cyan">Services</a>
+        <a href="products.html" class="block py-3 px-4 rounded-lg font-medium text-base text-slate-300 hover:bg-white/5 hover:text-white">Products</a>
+        <a href="contact.html" class="block py-3 px-4 rounded-lg font-medium text-base text-slate-300 hover:bg-white/5 hover:text-white">Contact</a>
+      </div>
+      <div class="pt-4 border-t border-white/5">
+        <a href="contact.html?quote=true" class="block w-full text-center py-3 rounded-lg text-sm font-semibold text-white bg-gradient-to-r from-brand-blue to-brand-accent">
+          Get a Quote
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="flex-grow pt-20">
+    <div class="bg-brand-dark min-h-screen py-16 relative overflow-hidden">
+      <!-- Ambient background glow -->
+      <div class="absolute top-[-5%] left-[-10%] h-[500px] w-[500px] rounded-full bg-brand-blue/10 blur-[130px] animate-pulse-slow pointer-events-none"></div>
+      <div class="absolute bottom-[20%] right-[-10%] h-[500px] w-[500px] rounded-full bg-brand-cyan/5 blur-[130px] pointer-events-none"></div>
+
+      <!-- Hero Header -->
+      <section class="relative mb-20 text-center space-y-6">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div class="inline-flex items-center space-x-2 rounded-full border border-brand-cyan/20 bg-brand-cyan/5 px-4 py-1.5 text-xs font-semibold text-brand-cyan uppercase tracking-wider mb-4">
+            <span>Our Capabilities</span>
+          </div>
+
+          <h1 class="font-display text-4xl sm:text-5xl lg:text-6xl font-black text-white tracking-tight leading-tight">
+            Engineering & Manufacturing <br />
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-cyan to-brand-blue">
+              Expertise
+            </span>
+          </h1>
+
+          <p class="text-base sm:text-lg text-slate-400 max-w-2xl mx-auto leading-relaxed pt-2">
+            Explore our specialized automotive competencies spanning structural elastomeric design, physical molding execution, prototyping, and customized checking fixtures.
+          </p>
+        </div>
+      </section>
+
+      <!-- Services Tab Content -->
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <!-- Tab Navigation buttons -->
+        <div class="flex flex-wrap justify-center gap-3 md:gap-4 mb-16 border-b border-white/5 pb-8">
+          <button id="btn-engineering" class="tab-btn flex items-center space-x-3 px-6 py-4 rounded-xl text-sm font-bold tracking-wide transition-all duration-300 border cursor-pointer bg-brand-blue text-white border-brand-cyan/40 shadow-[0_0_20px_rgba(37,99,235,0.3)]" onclick="switchTab('engineering')">
+            <i data-lucide="pen-tool" class="h-4.5 w-4.5 text-brand-cyan"></i>
+            <span>Engineering Services</span>
+          </button>
+          <button id="btn-manufacturing" class="tab-btn flex items-center space-x-3 px-6 py-4 rounded-xl text-sm font-bold tracking-wide transition-all duration-300 border cursor-pointer bg-brand-card text-slate-400 border-white/5 hover:text-white hover:border-slate-700" onclick="switchTab('manufacturing')">
+            <i data-lucide="wrench" class="h-4.5 w-4.5 text-slate-400"></i>
+            <span>Injection & Molding</span>
+          </button>
+          <button id="btn-prototyping" class="tab-btn flex items-center space-x-3 px-6 py-4 rounded-xl text-sm font-bold tracking-wide transition-all duration-300 border cursor-pointer bg-brand-card text-slate-400 border-white/5 hover:text-white hover:border-slate-700" onclick="switchTab('prototyping')">
+            <i data-lucide="layers" class="h-4.5 w-4.5 text-slate-400"></i>
+            <span>Rapid Prototyping</span>
+          </button>
+          <button id="btn-spm" class="tab-btn flex items-center space-x-3 px-6 py-4 rounded-xl text-sm font-bold tracking-wide transition-all duration-300 border cursor-pointer bg-brand-card text-slate-400 border-white/5 hover:text-white hover:border-slate-700" onclick="switchTab('spm')">
+            <i data-lucide="cpu" class="h-4.5 w-4.5 text-slate-400"></i>
+            <span>SPM & Gauges</span>
+          </button>
+        </div>
+
+        <!-- Tab Panels -->
+        <div class="min-h-[400px]">
+          <!-- Engineering Content Panel -->
+          <div id="content-engineering" class="tab-content grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            <div class="lg:col-span-7 space-y-6">
+              <h3 class="font-display text-2xl sm:text-3xl font-extrabold text-white">
+                Advanced Sealing & CAD/CAE Engineering
+              </h3>
+              <p class="text-slate-400 text-sm leading-relaxed">
+                We provide expert-level computer-aided design and specialized structural engineering services. Our main core competency lies in the design, optimization, and mechanical validation of EPDM and Thermoplastic Elastomer (TPE) vehicle sealing systems.
+              </p>
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+                <div class="flex space-x-3">
+                  <i data-lucide="check-circle" class="h-5 w-5 text-brand-cyan shrink-0 mt-0.5"></i>
+                  <div>
+                    <h4 class="text-sm font-bold text-white">CAD Sealing Systems</h4>
+                    <p class="text-xs text-slate-400 leading-relaxed">Design profiles for frameless side glass, doors, and channel mounts.</p>
+                  </div>
+                </div>
+                <div class="flex space-x-3">
+                  <i data-lucide="check-circle" class="h-5 w-5 text-brand-cyan shrink-0 mt-0.5"></i>
+                  <div>
+                    <h4 class="text-sm font-bold text-white">FEA / CAE Simulation</h4>
+                    <p class="text-xs text-slate-400 leading-relaxed">Predict rubber seal load deflection, glass run slip, and compression.</p>
+                  </div>
+                </div>
+                <div class="flex space-x-3">
+                  <i data-lucide="check-circle" class="h-5 w-5 text-brand-cyan shrink-0 mt-0.5"></i>
+                  <div>
+                    <h4 class="text-sm font-bold text-white">Design Resolution</h4>
+                    <p class="text-xs text-slate-400 leading-relaxed">Identify and resolve packaging, flushness, and wind noise issues.</p>
+                  </div>
+                </div>
+                <div class="flex space-x-3">
+                  <i data-lucide="check-circle" class="h-5 w-5 text-brand-cyan shrink-0 mt-0.5"></i>
+                  <div>
+                    <h4 class="text-sm font-bold text-white">Validation Audits</h4>
+                    <p class="text-xs text-slate-400 leading-relaxed">On-site customer visits and direct representation for supplier audits.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="lg:col-span-5">
+              <div class="relative aspect-square w-full rounded-2xl overflow-hidden border border-white/5 glass-panel min-h-[350px]">
+                <img src="assets/cad-engineering.png" alt="Automotive CAD engineering and stress model FEA simulation" class="absolute inset-0 w-full h-full object-cover" />
+                <div class="absolute inset-0 bg-gradient-to-t from-brand-dark/40 to-transparent"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Manufacturing Content Panel -->
+          <div id="content-manufacturing" class="tab-content hidden space-y-8">
+            <div class="max-w-3xl space-y-4">
+              <h3 class="font-display text-2xl sm:text-3xl font-extrabold text-white">
+                Precision Injection & Compression Molding
+              </h3>
+              <p class="text-slate-400 text-sm leading-relaxed">
+                We design, develop, and manufacture high-performance injection and compression molding tools for diverse rubber-to-metal bonded sealing sections, 2K composite moldings, and dynamic joint profiles.
+              </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <div class="p-6 rounded-xl bg-brand-card border border-white/5 space-y-4">
+                <h4 class="font-display text-base font-bold text-brand-cyan">Tool Design & Development</h4>
+                <ul class="space-y-2.5 text-xs text-slate-300">
+                  <li class="flex items-start">
+                    <span class="h-1.5 w-1.5 rounded-full bg-brand-cyan shrink-0 mt-1.5 mr-2"></span>
+                    <span>Direct hot-runner optimization parameter setups</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="h-1.5 w-1.5 rounded-full bg-brand-cyan shrink-0 mt-1.5 mr-2"></span>
+                    <span>Multi-cavity mold layouts for high-volume automotive parts</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="h-1.5 w-1.5 rounded-full bg-brand-cyan shrink-0 mt-1.5 mr-2"></span>
+                    <span>Draft analysis and parting line calculation</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="h-1.5 w-1.5 rounded-full bg-brand-cyan shrink-0 mt-1.5 mr-2"></span>
+                    <span>Double shot (2K) mold mechanism designs</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="p-6 rounded-xl bg-brand-card border border-white/5 space-y-4">
+                <h4 class="font-display text-base font-bold text-brand-cyan">Injection Molding Tools</h4>
+                <ul class="space-y-2.5 text-xs text-slate-300">
+                  <li class="flex items-start">
+                    <span class="h-1.5 w-1.5 rounded-full bg-brand-cyan shrink-0 mt-1.5 mr-2"></span>
+                    <span>Optimized for synthetic EPDM polymers and silicone</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="h-1.5 w-1.5 rounded-full bg-brand-cyan shrink-0 mt-1.5 mr-2"></span>
+                    <span>Thin-wall molding capabilities with minimal shrinkage</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="h-1.5 w-1.5 rounded-full bg-brand-cyan shrink-0 mt-1.5 mr-2"></span>
+                    <span>High-temperature tool steels for long cycle runs</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="h-1.5 w-1.5 rounded-full bg-brand-cyan shrink-0 mt-1.5 mr-2"></span>
+                    <span>Complex core pull and slide integrations</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="p-6 rounded-xl bg-brand-card border border-white/5 space-y-4">
+                <h4 class="font-display text-base font-bold text-brand-cyan">Compression Molding</h4>
+                <ul class="space-y-2.5 text-xs text-slate-300">
+                  <li class="flex items-start">
+                    <span class="h-1.5 w-1.5 rounded-full bg-brand-cyan shrink-0 mt-1.5 mr-2"></span>
+                    <span>Optimized for high-density heavy-duty rubber compounds</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="h-1.5 w-1.5 rounded-full bg-brand-cyan shrink-0 mt-1.5 mr-2"></span>
+                    <span>Zero-air pocket compression parameter validation</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="h-1.5 w-1.5 rounded-full bg-brand-cyan shrink-0 mt-1.5 mr-2"></span>
+                    <span>Uniform heat mapping over tool plates</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="h-1.5 w-1.5 rounded-full bg-brand-cyan shrink-0 mt-1.5 mr-2"></span>
+                    <span>Robust metal inserts bonding setups</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Prototyping Content Panel -->
+          <div id="content-prototyping" class="tab-content hidden grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            <div class="lg:col-span-7 space-y-6">
+              <h3 class="font-display text-2xl sm:text-3xl font-extrabold text-white">
+                High-Fidelity Rapid Prototyping
+              </h3>
+              <p class="text-slate-400 text-sm leading-relaxed">
+                We validate geometries, physical fitments, and dynamic closing forces before committing to heavy steel molds. Our prototyping techniques deliver functional parts that closely mirror production characteristics.
+              </p>
+
+              <div class="space-y-4">
+                <div class="p-5 rounded-xl bg-brand-card border border-white/5 space-y-2">
+                  <h4 class="text-sm font-bold text-brand-cyan">Stereolithography (SLA)</h4>
+                  <p class="text-xs text-slate-400 leading-relaxed">
+                    Using industrial photopolymer resins to manufacture components with superior surface details. Excellent for fitment, optical review, and structural mockups of glass run channels.
+                  </p>
+                </div>
+                <div class="p-5 rounded-xl bg-brand-card border border-white/5 space-y-2">
+                  <h4 class="text-sm font-bold text-brand-cyan">Vacuum Casting</h4>
+                  <p class="text-xs text-slate-400 leading-relaxed">
+                    Sillicone tooling reproduction using polyurethane resins. This process delivers low-volume functional elastomer parts with properties resembling production-grade EPDM (durometer, elongation, tensile strength).
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="lg:col-span-5 space-y-6">
+              <div class="p-6 rounded-2xl bg-brand-card border border-white/5">
+                <h4 class="font-display text-base font-bold text-white mb-4">Prototyping Key Metrics</h4>
+                <div class="space-y-3.5 text-xs text-slate-300">
+                  <div class="flex justify-between border-b border-white/5 pb-2">
+                    <span>Dimensional Accuracy</span>
+                    <span class="font-bold text-brand-cyan">± 0.1 mm</span>
+                  </div>
+                  <div class="flex justify-between border-b border-white/5 pb-2">
+                    <span>Durometer Range (Vacuum)</span>
+                    <span class="font-bold text-brand-cyan">40A - 90A Shore</span>
+                  </div>
+                  <div class="flex justify-between border-b border-white/5 pb-2">
+                    <span>Standard Lead Time</span>
+                    <span class="font-bold text-brand-cyan">3 - 5 Working Days</span>
+                  </div>
+                  <div class="flex justify-between">
+                    <span>Materials Supported</span>
+                    <span class="font-bold text-brand-cyan">PU, ABS, EPDM-like</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- SPM & Gauges Content Panel -->
+          <div id="content-spm" class="tab-content hidden space-y-8">
+            <div class="max-w-3xl space-y-4">
+              <h3 class="font-display text-2xl sm:text-3xl font-extrabold text-white">
+                Special Purpose Machines (SPM) & Checking Gauges
+              </h3>
+              <p class="text-slate-400 text-sm leading-relaxed">
+                We design and construct high-precision checking gauges, checking fixtures, and custom assembly machines to guarantee that volume production profiles exactly align with customer CAD specifications.
+              </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div class="p-6 rounded-xl bg-brand-card border border-white/5 space-y-4">
+                <h4 class="font-display text-base font-bold text-brand-cyan">Precision Checking Gauges</h4>
+                <p class="text-xs text-slate-400 leading-relaxed">
+                  Checking gauges are critical to verify outer profiles, channel thickness, lip lengths, and corner mold angles of the EPDM Glass Run Channels under static constraints. We deliver custom gauge layouts tailored to OEM quality inspectors.
+                </p>
+                <ul class="space-y-2 text-xs text-slate-300">
+                  <li class="flex items-center">
+                    <span class="h-1 w-3 bg-brand-cyan mr-2 rounded-full"></span>
+                    Anodized aluminum base configurations
+                  </li>
+                  <li class="flex items-center">
+                    <span class="h-1 w-3 bg-brand-cyan mr-2 rounded-full"></span>
+                    Step and Gap measurements within ±0.05 mm
+                  </li>
+                  <li class="flex items-center">
+                    <span class="h-1 w-3 bg-brand-cyan mr-2 rounded-full"></span>
+                    Stainless steel slide elements for variable glass run lengths
+                  </li>
+                </ul>
+              </div>
+
+              <div class="p-6 rounded-xl bg-brand-card border border-white/5 space-y-4">
+                <h4 class="font-display text-base font-bold text-brand-cyan">Special Purpose Machines (SPM)</h4>
+                <p class="text-xs text-slate-400 leading-relaxed">
+                  Custom assembly mechanisms such as automated clip insertion fixtures, lip folding apparatuses, and online corner-seal compression testing modules to maximize assembly speed on Tier 1 shop floors.
+                </p>
+                <ul class="space-y-2 text-xs text-slate-300">
+                  <li class="flex items-center">
+                    <span class="h-1 w-3 bg-brand-cyan mr-2 rounded-full"></span>
+                    Pneumatic-driven clamping and positioning locks
+                  </li>
+                  <li class="flex items-center">
+                    <span class="h-1 w-3 bg-brand-cyan mr-2 rounded-full"></span>
+                    PLC-controlled diagnostic parameters
+                  </li>
+                  <li class="flex items-center">
+                    <span class="h-1 w-3 bg-brand-cyan mr-2 rounded-full"></span>
+                    Integrated failsafe sensors for component presence
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-[#050810] border-t border-white/5 pt-16 pb-8 text-slate-400">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+        <!-- Column 1: Profile -->
+        <div class="space-y-4">
+          <a href="index.html" class="flex items-center space-x-2 group">
+            <div class="flex h-10 w-10 items-center justify-center rounded-lg bg-brand-accent/10 border border-brand-cyan/20 text-brand-cyan">
+              <i data-lucide="cpu" class="h-5 w-5"></i>
+            </div>
+            <div class="flex flex-col">
+              <span class="font-display text-lg font-black tracking-widest text-white">
+                SS AUTOMOTIVE
+              </span>
+              <span class="text-[10px] uppercase tracking-wider text-brand-cyan">
+                Engineering Sealing Systems
+              </span>
+            </div>
+          </a>
+          <p class="text-sm leading-relaxed text-slate-400 pt-2">
+            SS Automotive is a premier automotive engineering provider with 15+ years of experience in sealing systems innovation, custom tooling, and product validation.
+          </p>
+        </div>
+
+        <!-- Column 2: Quick Links -->
+        <div>
+          <h3 class="font-display text-sm font-bold uppercase tracking-wider text-white mb-5">
+            Quick Links
+          </h3>
+          <ul class="space-y-3 text-sm">
+            <li>
+              <a href="index.html" class="hover:text-brand-cyan transition-colors duration-200 flex items-center group">
+                <i data-lucide="arrow-right" class="h-3 w-3 mr-2 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-200 text-brand-cyan"></i>
+                Home
+              </a>
+            </li>
+            <li>
+              <a href="about.html" class="hover:text-brand-cyan transition-colors duration-200 flex items-center group">
+                <i data-lucide="arrow-right" class="h-3 w-3 mr-2 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-200 text-brand-cyan"></i>
+                About Company
+              </a>
+            </li>
+            <li>
+              <a href="services.html" class="hover:text-brand-cyan transition-colors duration-200 flex items-center group">
+                <i data-lucide="arrow-right" class="h-3 w-3 mr-2 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-200 text-brand-cyan"></i>
+                Engineering Services
+              </a>
+            </li>
+            <li>
+              <a href="products.html" class="hover:text-brand-cyan transition-colors duration-200 flex items-center group">
+                <i data-lucide="arrow-right" class="h-3 w-3 mr-2 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-200 text-brand-cyan"></i>
+                Product Catalog
+              </a>
+            </li>
+            <li>
+              <a href="contact.html" class="hover:text-brand-cyan transition-colors duration-200 flex items-center group">
+                <i data-lucide="arrow-right" class="h-3 w-3 mr-2 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-200 text-brand-cyan"></i>
+                Contact & Location
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Core Expertise -->
+        <div>
+          <h3 class="font-display text-sm font-bold uppercase tracking-wider text-white mb-5">
+            Our Expertise
+          </h3>
+          <ul class="space-y-3 text-sm">
+            <li class="flex items-center text-slate-400">
+              <span class="h-1.5 w-1.5 rounded-full bg-brand-cyan/50 mr-2.5"></span>
+              Vehicle Sealing Systems
+            </li>
+            <li class="flex items-center text-slate-400">
+              <span class="h-1.5 w-1.5 rounded-full bg-brand-cyan/50 mr-2.5"></span>
+              CAD Design & Optimization
+            </li>
+            <li class="flex items-center text-slate-400">
+              <span class="h-1.5 w-1.5 rounded-full bg-brand-cyan/50 mr-2.5"></span>
+              FEA / CAE Simulation
+            </li>
+            <li class="flex items-center text-slate-400">
+              <span class="h-1.5 w-1.5 rounded-full bg-brand-cyan/50 mr-2.5"></span>
+              Injection Molding
+            </li>
+            <li class="flex items-center text-slate-400">
+              <span class="h-1.5 w-1.5 rounded-full bg-brand-cyan/50 mr-2.5"></span>
+              Rapid Prototyping (SLA)
+            </li>
+            <li class="flex items-center text-slate-400">
+              <span class="h-1.5 w-1.5 rounded-full bg-brand-cyan/50 mr-2.5"></span>
+              SPM & Gauge Development
+            </li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Contact & Location -->
+        <div class="space-y-4">
+          <h3 class="font-display text-sm font-bold uppercase tracking-wider text-white mb-5">
+            Get in Touch
+          </h3>
+          <ul class="space-y-4 text-sm">
+            <li class="flex items-start">
+              <i data-lucide="map-pin" class="h-5 w-5 mr-3 text-brand-cyan shrink-0 mt-0.5"></i>
+              <span>
+                Wakad, Pune,
+                <br />
+                Maharashtra - 411057, India
+              </span>
+            </li>
+            <li class="flex items-center">
+              <i data-lucide="phone" class="h-5 w-5 mr-3 text-brand-cyan shrink-0"></i>
+              <a href="tel:+919876543210" class="hover:text-brand-cyan transition-colors">
+                +91 98765 43210
+              </a>
+            </li>
+            <li class="flex items-center">
+              <i data-lucide="mail" class="h-5 w-5 mr-3 text-brand-cyan shrink-0"></i>
+              <a href="mailto:info@ssautomotive.in" class="hover:text-brand-cyan transition-colors">
+                info@ssautomotive.in
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Lower Footer -->
+      <div class="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center text-xs space-y-4 md:space-y-0">
+        <p>© <span id="current-year"></span> SS Automotive. All rights reserved.</p>
+        <div class="flex space-x-6">
+          <a href="#" class="hover:text-brand-cyan transition-colors">Privacy Policy</a>
+          <a href="#" class="hover:text-brand-cyan transition-colors">Terms of Service</a>
+          <a href="#" class="hover:text-brand-cyan transition-colors">Pune Engineering Cell</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>
+    // Initialize icons
+    lucide.createIcons();
+
+    // Set current year in footer
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+
+    // Header scroll behavior
+    const header = document.getElementById('main-header');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 20) {
+        header.classList.remove('bg-transparent', 'py-6', 'border-transparent');
+        header.classList.add('bg-brand-dark/85', 'backdrop-blur-md', 'border-white/5', 'py-4', 'shadow-lg', 'shadow-black/20');
+      } else {
+        header.classList.add('bg-transparent', 'py-6', 'border-transparent');
+        header.classList.remove('bg-brand-dark/85', 'backdrop-blur-md', 'border-white/5', 'py-4', 'shadow-lg', 'shadow-black/20');
+      }
+    });
+
+    // Mobile menu toggle
+    const menuToggle = document.getElementById('menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+    menuToggle.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+      const isHidden = mobileMenu.classList.contains('hidden');
+      menuToggle.innerHTML = isHidden 
+        ? '<i data-lucide="menu" class="h-5 w-5"></i>' 
+        : '<i data-lucide="x" class="h-5 w-5"></i>';
+      lucide.createIcons();
+    });
+
+    // Interactive Tab Switching logic
+    const tabs = ['engineering', 'manufacturing', 'prototyping', 'spm'];
+
+    function switchTab(activeId) {
+      // Hide all content panels and set all tab buttons inactive
+      tabs.forEach(id => {
+        const content = document.getElementById(`content-${id}`);
+        const btn = document.getElementById(`btn-${id}`);
+        
+        // Hide content
+        content.classList.add('hidden');
+        
+        // Reset button style
+        btn.className = "tab-btn flex items-center space-x-3 px-6 py-4 rounded-xl text-sm font-bold tracking-wide transition-all duration-300 border cursor-pointer bg-brand-card text-slate-400 border-white/5 hover:text-white hover:border-slate-700";
+        
+        // Reset icon class
+        const icon = btn.querySelector('i');
+        if (icon) {
+          icon.className = "h-4.5 w-4.5 text-slate-400";
+        }
+      });
+
+      // Show the selected content panel
+      const activeContent = document.getElementById(`content-${activeId}`);
+      activeContent.classList.remove('hidden');
+
+      // Style active button
+      const activeBtn = document.getElementById(`btn-${activeId}`);
+      activeBtn.className = "tab-btn flex items-center space-x-3 px-6 py-4 rounded-xl text-sm font-bold tracking-wide transition-all duration-300 border cursor-pointer bg-brand-blue text-white border-brand-cyan/40 shadow-[0_0_20px_rgba(37,99,235,0.3)]";
+      
+      const activeIcon = activeBtn.querySelector('i');
+      if (activeIcon) {
+        activeIcon.className = "h-4.5 w-4.5 text-brand-cyan";
+      }
+
+      // Update URL parameter without reload
+      history.pushState(null, '', `?tab=${activeId}`);
+      
+      // Re-trigger icon loading just in case
+      lucide.createIcons();
+    }
+
+    // Parse URL parameter on initial load
+    document.addEventListener("DOMContentLoaded", () => {
+      const params = new URLSearchParams(window.location.search);
+      const tabParam = params.get('tab');
+      if (tabParam && tabs.includes(tabParam)) {
+        switchTab(tabParam);
+      } else {
+        switchTab('engineering');
+      }
+    });
+  </script>
+</body>
+</html>
